@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -12,19 +12,17 @@
 <body class="page__body">
 
   <header class="header">
-    <div class="header__nav container">
-      <div class="header__top">
-        <a href="index.html" class="header__logo">
-          <img class="header__icon" src="../source/img/logo/logo-mobile.svg" alt="Cat Energy" width="33" height="37">
-          <picture class="header__icon--text">
-            <source srcset="../source/img/logo/logo-text.svg" media="(max-width: 767px)">
-            <source srcset="../source/img/logo/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1220px)">
-            <source srcset="../source/img/logo/logo-desktop.svg" media="(min-width: 1220px)" />
-            <img class="header__icon-content" src="../source/img/logo/logo-text.svg" alt="Cat Energy" width="101"
-              height="18">
-          </picture>
-        </a>
-      </div>
+    <div class="header__content container">
+      <a href="index.html" class="header__logo link">
+        <picture class="header__images">
+          <source srcset="../source/img/logo/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1220px)">
+          <source srcset="../source/img/logo/logo-desktop.svg" media="(min-width: 1219px)" />
+          <img src="../source/img/logo/logo-mobile.svg" alt="Cat Energy" width="33" height="37" class="header__image">
+        </picture>
+      </a>
+      <a href="index.html" class="header__logo link">
+        <img class="header__text-image" src="../source/img/logo/logo-text.svg" alt="Cat Energy" width="101" height="18">
+      </a>
       <nav class="header__navigation navigation">
         <button class="header__navigation-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -42,30 +40,26 @@
         </ul>
       </nav>
     </div>
-    <div class="header__promotion">
-      <div class="header__promotion-container container">
-        <h1 class="header__title">Функциональное питание для котов</h1>
-        <p class="header__subtitle">Занялся собой? Займись котом!</p>
+  </header>
+  <main class="main">
+    <section class="promotion">
+      <div class="promotion__content">
+        <h1 class="promotion__title">Функциональное питание для котов</h1>
+        <p class="promotion__subtitle">Занялся собой? Займись котом!</p>
       </div>
       <div class="hero">
-        <picture class="promotion__pic">
+        <picture class="promotion__images">
           <source srcset="../source/img/header/index-can.png" media="(min-width: 1220px)">
           <source srcset="../source/img/header/index-can-tablet.png" media="(min-width: 768px) and (max-width: 1220px)">
-          <source srcset="../source/img/header/index-can-mobile.png" media="(max-width: 767px)">
-          <img src="../source/img/header/index-can-mobile.png" alt="Фотография рациона питания - мобильная" width="280"
-            height="270">
+          <img src="../source/img/header/index-can-mobile.png" alt="Фотография рациона питания" width="280" height="270"
+            class="promotion__image">
         </picture>
       </div>
-      <div class="header__button-container container">
-        <a class="header__button button" href="#">подобрать программу</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="main">
+      <a class="promotion__link basic-button container" href="#">Подобрать программу</a>
+    </section>
     <section class="programs">
       <div class="programs__container container">
-        <h2 class="visually-hidden">Предлагаемые программы питания для вашего питомца</h2>
+        <h2 class="visually-hidden">Предлагаем программы питания для вашего питомца</h2>
         <ul class="programs__list">
           <li class="programs__item">
             <h3 class="programs__title">Похудение</h3>
@@ -112,7 +106,7 @@
     <section class="example">
       <div class="container">
         <h2 class="example__title">Живой пример</h2>
-        <div class="example__info ">
+        <div class="example__info">
           <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой
             обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих
             привычек и по-прежнему спит по 16 часов в день. </p>
@@ -124,26 +118,22 @@
             <p class="example__text">60 дней</p>
             <p class="example__label">затрачено времени</p>
           </div>
-          <div class="example__expenses example__expenses">
-            <p>Затраты на питание:</p>
-            <p>15000 руб.</p>
+          <div class="example__expenses expenses">
+            <p class="expenses__text">Затраты на питание:</p>
+            <p class="expenses__price">15000 руб.</p>
           </div>
         </div>
         <div class="example__slider slider">
           <h3 class="visually-hidden">Наглядный пример изменений!</h3>
           <div class="slider__visual">
-            <div class="slider__image slider__pic--before">
-              <picture>
-                <img src="../source/img/slider/before-mobile.png" alt="Питомец до программы"
-                  class="slider__image--before" width="311" height="232">
-              </picture>
-            </div>
-            <div class="slider__image slider__pic--after visually-hidden">
-              <picture>
-                <img src="../source/img/slider/after-mobile.png" alt="Питомец после программы"
-                  class="slider__image--after" width="251" height="240">
-              </picture>
-            </div>
+            <picture class="slider__images slider__images--before">
+              <img src="../source/img/slider/before-mobile.png" alt="Питомец до программы"
+                class="slider__image slider__image--before" width="311" height="232">
+            </picture>
+            <picture class="slider__images slider__images--after visually-hidden">
+              <img src="../source/img/slider/after-mobile.png" alt="Питомец после программы"
+                class="slider__image slider__image--after" width="251" height="240">
+            </picture>
           </div>
           <div class="slider__controls slider-control">
             <label for="range" class="slider__label">Было</label>
@@ -166,7 +156,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__container container">
+    <div class="container">
       <a href="#" class="footer__logo logo">
         <img src="../source/img/logo/logo-footer.svg" alt="Логотип футера" width="128" height="24">
       </a>
@@ -175,17 +165,18 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a href="blank.html" class="socials__link" aria-label="Вконтакте">
-              <img src="../source/img/socials/icon_vkontakte.svg" width="23" height="16" alt="VK">
+              <img src="../source/img/socials/icon_vkontakte.svg" width="23" height="16" alt="VK" class="social__icon">
             </a>
           </li>
           <li class="socials__item">
             <a href="blank.html" class="social__link" aria-label="Инстаграм">
-              <img src="../source/img/socials/icon_instagram.svg" width="16" height="16" alt="Inst">
+              <img src="../source/img/socials/icon_instagram.svg" width="16" height="16" alt="Inst"
+                class="social__icon">
             </a>
           </li>
           <li class="socials__item">
             <a href="blank.html" class="socials__link" aria-label="Фейсбук">
-              <img src="../source/img/socials/icon_facebook.svg" width="22" height="22" alt="FB">
+              <img src="../source/img/socials/icon_facebook.svg" width="22" height="22" alt="FB" class="social__icon">
             </a>
           </li>
         </ul>
@@ -193,7 +184,7 @@
       <section class="footer__section ">
         <h2 class="visually-hidden">Наша академия</h2>
         <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="copyright__link">HTML Academy
-          <img src="../source/img/logo/logo-html-academy.svg" alt="Логотип HTML Academy" class="copyright__image">
+          <img src="../source/img/logo/logo-html-academy.svg" alt="Логотип HTML Academy" class="copyright__icon">
         </a>
       </section>
     </div>
