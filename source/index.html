@@ -12,7 +12,7 @@
 <body class="page__body">
 
   <header class="header">
-    <div class="header__content container">
+    <div class="container">
       <a href="index.html" class="header__logo link">
         <picture class="header__images">
           <source srcset="../source/img/logo/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1220px)">
@@ -47,14 +47,12 @@
         <h1 class="promotion__title">Функциональное питание для котов</h1>
         <p class="promotion__subtitle">Занялся собой? Займись котом!</p>
       </div>
-      <div class="hero">
-        <picture class="promotion__images">
-          <source srcset="../source/img/header/index-can.png" media="(min-width: 1220px)">
-          <source srcset="../source/img/header/index-can-tablet.png" media="(min-width: 768px) and (max-width: 1219px)">
-          <img src="../source/img/header/index-can-mobile.png" alt="Фотография рациона питания" width="280" height="270"
-            class="promotion__image">
-        </picture>
-      </div>
+      <picture class="promotion__images">
+        <source srcset="../source/img/header/index-can.png" media="(min-width: 1220px)">
+        <source srcset="../source/img/header/index-can-tablet.png" media="(min-width: 768px) and (max-width: 1219px)">
+        <img src="../source/img/header/index-can-mobile.png" alt="Фотография рациона питания" width="280" height="270"
+          class="promotion__image">
+      </picture>
       <a class="promotion__link basic-button container" href="#">Подобрать программу</a>
     </section>
     <section class="programs container">
@@ -151,36 +149,40 @@
       </div>
     </section>
   </main>
-  <footer class="footer container">
-    <a href="#" class="footer__logo logo">
-      <img src="../source/img/logo/logo-footer.svg" alt="Логотип футера" width="128" height="24">
-    </a>
-    <section class="footer__section socials">
-      <h2 class="visually-hidden">Мы в сети!</h2>
-      <ul class="socials__list">
-        <li class="socials__item">
-          <a href="blank.html" class="socials__link" aria-label="Вконтакте">
-            <img src="../source/img/socials/icon_vkontakte.svg" width="23" height="16" alt="VK" class="social__icon">
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="blank.html" class="social__link" aria-label="Инстаграм">
-            <img src="../source/img/socials/icon_instagram.svg" width="16" height="16" alt="Inst" class="social__icon">
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="blank.html" class="socials__link" aria-label="Фейсбук">
-            <img src="../source/img/socials/icon_facebook.svg" width="22" height="22" alt="FB" class="social__icon">
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="footer__section ">
-      <h2 class="visually-hidden">Наша академия</h2>
-      <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="copyright__link">HTML Academy
-        <img src="../source/img/logo/logo-html-academy.svg" alt="Логотип HTML Academy" class="copyright__icon">
+  <footer class="footer">
+    <div class="container">
+      <a href="#" class="footer__logo logo">
+        <img src="../source/img/logo/logo-footer.svg" alt="Логотип футера" width="128" height="24">
       </a>
-    </section>
+      <section class="footer__section socials">
+        <h2 class="visually-hidden">Мы в сети!</h2>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="blank.html" class="socials__link" aria-label="Вконтакте">
+              <img src="../source/img/socials/icon_vkontakte.svg" width="23" height="16" alt="VK" class="social__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="blank.html" class="social__link" aria-label="Инстаграм">
+              <img src="../source/img/socials/icon_instagram.svg" width="16" height="16" alt="Inst"
+                class="social__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="blank.html" class="socials__link" aria-label="Фейсбук">
+              <img src="../source/img/socials/icon_facebook.svg" width="22" height="22" alt="FB" class="social__icon">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__section ">
+        <h2 class="visually-hidden">Наша академия</h2>
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="copyright__link">HTML Academy
+          <img src="../source/img/logo/logo-html-academy.svg" alt="Логотип HTML Academy" class="copyright__icon">
+        </a>
+      </section>
+    </div>
+
   </footer>
 
 </body>
