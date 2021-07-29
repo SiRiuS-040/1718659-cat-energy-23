@@ -41,13 +41,13 @@
       </nav>
     </div>
   </header>
-
   <main class="main">
     <section class="form-page">
       <h2 class="form-page__title">Подбор программы</h2>
       <p class="form-page__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form method="get" action="https://echo.htmlacademy.ru" class="form-page__form form">
         <fieldset class="form__group form__group--info form-group">
+          <h3 class="visually-hidden">Введите сведения о питомце</h3>
           <ul class="form-group__list">
             <li class="form-group__item">
               <label for="pet-name" class="form-group__label">Имя:*</label>
@@ -64,6 +64,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__group form__group--programs form-group">
+          <h3 class="visually-hidden">Выберите программу питания</h3>
           <ul class="form-group__list">
             <li class="form-group__item">
               <input type="radio" name="program-selection" value="slim" id="slimming" class="form-group__radio" checked>
@@ -83,13 +84,13 @@
           <legend class="form-group__title">Контактные данные (владельца кота)</legend>
           <ul class="form-group__list">
             <li class="form-group__item">
-              <label for="owner__mail" class="form-group__label">e-mail:*</label>
-              <input type="email" name="owner-maile" id="owner-mail" class="form-group__input"
+              <label for="owner-mail" class="form-group__label">e-mail:*</label>
+              <input type="email" name="owner-mail" id="owner-mail" class="form-group__input"
                 placeholder="kuklachev@gmail.com" required>
             </li>
             <li class="form-group__item">
-              <label for="owner__phone" class="form-group__label">Телефон:*</label>
-              <input type="tel" name="owner-phone" id="pet-weight" class="form-group__input"
+              <label for="owner-phone" class="form-group__label">Телефон:*</label>
+              <input type="tel" name="owner-phone" id="owner-phone" class="form-group__input"
                 placeholder="8(960)900-60-90" required>
             </li>
           </ul>
@@ -138,7 +139,6 @@
       </div>
     </section>
   </main>
-
   <footer class="footer">
     <div class="container">
       <a href="index.html" class="footer__logo logo">
