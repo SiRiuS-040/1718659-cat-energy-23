@@ -1,1 +1,33 @@
 // Начните писать стили здесь
+
+// @import "./global/variables.scss";
+// Colors
+// Viewports
+
+@import "./global/variables.scss";
+
+// @import "./global/fonts.scss";
+@import "./global/fonts.scss";
+
+// @import("blocks/page.scss");
+
+@import "./global/page.scss";
+
+// @import "./global/global.scss";
+
+@import "./global/global.scss";
+
+//
+
+@import "./global/container.scss";
+@import "./global/basic-button.scss";
+
+@import "./global/header.scss";
+@import "./global/main.scss";
+@import "./global/promotion.scss";
+@import "./global/programs.scss";
+@import "./global/advantages.scss";
+@import "./global/example.scss";
+@import "./global/slider.scss";
+@import "./global/contacts.scss";
+@import "./global/footer.scss";

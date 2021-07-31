@@ -1,0 +1,31 @@
+.promotion {
+}
+.promotion__content {
+  background: $starbur-085;
+  min-height: 302px;
+}
+.promotion__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  color: $white;
+}
+.promotion__subtitle {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $white;
+}
+.promotion__images {
+}
+.promotion__image {
+  max-width: 280px;
+  height: 270px;
+}
+.promotion__link {
+}
