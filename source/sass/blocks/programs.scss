@@ -6,38 +6,39 @@
   padding: 0;
 }
 .programs__item {
-  background: #f2f2f2;
+  background: $bleached-silk;
   margin: 10px 0;
 }
 
 .programs__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $basic-font-title;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }
 
 .programs__icon {
 }
 
 .programs__description {
-  font-family: "Arial", sans-serif;
+  font-family: $basic-font-text;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $goshawk-grey;
 }
 .programs__link {
-  font-family: Oswald;
+  text-decoration: none;
+  font-family: $basic-font-title;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }

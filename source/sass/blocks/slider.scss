@@ -19,11 +19,11 @@
 .slider-control {
 }
 .slider__label {
-  font-family: Oswald;
+  font-family: $basic-font-title;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }
