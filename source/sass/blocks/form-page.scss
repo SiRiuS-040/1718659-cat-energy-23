@@ -7,6 +7,7 @@
   color: $black;
   text-transform: uppercase;
 }
+
 .form-page__title {
   padding: 0;
   margin: 0;
@@ -19,6 +20,7 @@
   line-height: 36px;
   text-transform: none;
 }
+
 .form-page__subtitle {
   padding: 0;
   margin: 0;
@@ -28,14 +30,11 @@
   font-size: 14px;
   line-height: 18px;
 }
+
 .form-page__form {
   padding: 0;
   margin: 0;
   margin-top: 25px;
-}
-.form {
-}
-.form__group {
 }
 
 .form-group {
@@ -53,18 +52,23 @@
   padding: 0;
   margin: 0;
 }
+
 .form-group__item {
   margin: 14px 0;
+
   &:last-of-type {
     margin: 0;
   }
+
   &:first-of-type {
     margin: 0;
   }
 }
+
 .form-group__label {
   color: $goshawk-grey;
 }
+
 .form-group__input {
   padding: 10px 15px;
   font-family: $basic-font-title;
@@ -77,9 +81,11 @@
   border: 2px solid $placebo;
   box-sizing: border-box;
   outline: none;
+
   &:hover {
     border: 2px solid $compact-disc-grey;
   }
+
   &:focus {
     border: 2px solid $goshawk-grey;
   }
@@ -93,8 +99,6 @@
 
   .form-group__label {
     color: $black-out;
-    &:hover {
-    }
   }
 }
 
@@ -103,13 +107,12 @@
   opacity: 0.4;
 }
 
-.form-group__radio {
-}
 .form__group--owner-info {
-  // padding-top: 26px;
-  // padding-bottom: 24px;
+  border-top: 2px solid $starbur;
+
   .form-group__title {
     padding-top: 26px;
+    padding-right: 20px;
     padding-bottom: 35px;
     text-transform: none;
     font-style: normal;
@@ -117,16 +120,10 @@
     font-size: 24px;
     line-height: 26px;
   }
+
   .form-group__list {
     color: $goshawk-grey;
     padding-bottom: 24px;
-  }
-}
-
-.form__group--owner-info {
-  border-top: 2px solid $starbur;
-  .form-group__title {
-    padding-right: 20px;
   }
 
   .form-group__item {
@@ -138,16 +135,9 @@
   }
 }
 
-.form-group__title {
-}
-
-.form-group__label {
-}
-.form-group__input {
-}
-
 .form__group--message {
   border-top: 2px solid $starbur;
+
   .form-group__title {
     padding-right: 20px;
     font-family: $basic-font-title;
@@ -157,6 +147,7 @@
     line-height: 26px;
     text-transform: none;
   }
+
   .form-group__input--textarea {
     margin-top: 38px;
     margin-bottom: 22px;
@@ -167,6 +158,7 @@
 
 .form__group--additional {
   border-top: 2px solid $starbur;
+
   .form-group__title {
     padding-right: 20px;
     font-family: $basic-font-title;
@@ -176,6 +168,7 @@
     line-height: 26px;
     text-transform: none;
   }
+
   .form-group__list {
     padding-top: 34px;
     padding-bottom: 34px;
@@ -183,8 +176,6 @@
 
   .form-group__label {
     color: $black;
-  }
-  .form-group__checkbox {
   }
 }
 

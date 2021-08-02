@@ -1,6 +1,3 @@
-.advantages {
-}
-
 .advantages__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -43,23 +40,27 @@
   line-height: 18px;
   color: $goshawk-grey;
 }
+
 .advantages__item--leaf {
   &::before {
-    content: url(/source/img/advantages/icon_leaf.svg);
+    content: url("/source/img/advantages/icon_leaf.svg");
   }
 }
+
 .advantages__item--water {
   &::before {
-    content: url(/source/img/advantages/icon_tub.svg);
+    content: url("/source/img/advantages/icon_tub.svg");
   }
 }
+
 .advantages__item--fork {
   &::before {
-    content: url(/source/img/advantages/icon_eat.svg);
+    content: url("/source/img/advantages/icon_eat.svg");
   }
 }
+
 .advantages__item--weight {
   &::before {
-    content: url(/source/img/advantages/icon_alarm.svg);
+    content: url("/source/img/advantages/icon_alarm.svg");
   }
 }

@@ -11,12 +11,13 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $white;
-
   background: $starbur;
-  padding: 7px 0px;
+  padding: 7px 0;
+
   &:hover {
     background: $grass;
   }
+
   &:active {
     color: $white-030;
   }

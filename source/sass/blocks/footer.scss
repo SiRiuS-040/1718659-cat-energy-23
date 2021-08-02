@@ -6,32 +6,23 @@
   &:hover {
     opacity: 0.8;
   }
+
   &:focus {
     opacity: 0.6;
   }
 }
 
-.footer__section {
-}
-.socials {
-}
-.visually-hidden {
-}
 .socials__list {
   padding: 0;
   list-style: none;
   border-top: 1px solid $orochimaru;
   border-bottom: 1px solid $orochimaru;
 }
+
 .socials__item {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.socials__link {
-}
-.socials__icon {
 }
 
 .copyright {
@@ -41,9 +32,8 @@
   font-size: 16px;
   line-height: 18px;
 }
+
 .copyright__link {
   text-decoration: none;
   color: $goshawk-grey;
-}
-.copyright__icon {
 }

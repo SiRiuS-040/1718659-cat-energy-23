@@ -1,6 +1,7 @@
 .example {
   background: $plaster;
 }
+
 .example__title {
   font-family: $basic-font-title;
   font-style: normal;
@@ -11,8 +12,6 @@
   color: $black;
 }
 
-.example__info {
-}
 .example__desc {
   font-family: $basic-font-text;
   font-style: normal;
@@ -20,9 +19,6 @@
   font-size: 14px;
   line-height: 18px;
   color: $goshawk-grey;
-}
-
-.example__item {
 }
 
 .example__text {
@@ -48,9 +44,6 @@
   color: $goshawk-grey;
 }
 
-.example__expenses {
-}
-
 .expenses {
   font-family: $basic-font-title;
   font-style: normal;
@@ -70,7 +63,4 @@
 .expenses__price {
   padding: 0;
   margin: 0;
-}
-
-.example__slider {
 }
