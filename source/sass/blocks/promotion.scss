@@ -1,11 +1,20 @@
 .promotion {
 }
+
+.promotion__wrapper {
+  min-width: 320px;
+  min-height: 302px;
+  background: url(/source/img/promotion/promo-background-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .promotion__content {
   background: $starbur-085;
-  min-height: 302px;
+  min-width: 320px;
+  min-height: 304px;
 }
 .promotion__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $basic-font-title;
   font-weight: normal;
   text-align: center;
   font-size: 36px;
@@ -13,7 +22,7 @@
   color: $white;
 }
 .promotion__subtitle {
-  font-family: "Oswald", sans-serif;
+  font-family: $basic-font-title;
   text-align: center;
   font-weight: normal;
   font-size: 14px;
@@ -28,4 +37,5 @@
   height: 270px;
 }
 .promotion__link {
+  margin: 0 20px 0 20px;
 }

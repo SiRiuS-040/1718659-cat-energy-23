@@ -1,6 +1,17 @@
 .header {
 }
 .header__logo {
+  text-decoration: none;
+  margin-right: 56px;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.logo {
 }
 
 .header__images {
@@ -11,10 +22,33 @@
 .header__navigation {
 }
 
-.header__navigation-toggle {
+.navigation {
+}
+.navigation__toggle {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 0px;
+  top: 24px;
+  right: 0px;
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navigation {
+.navigation__toggle--open {
+  &::before {
+    content: url(/source/img/icons/menu-burger-mobile.svg);
+  }
+}
+
+.navigation__toggle--close {
+  &::before {
+    content: url(/source/img/icons/menu-close-mobile.svg);
+  }
 }
 
 .navigation__list {
@@ -28,11 +62,26 @@
 }
 
 .navigation__link {
+  display: inline-block;
+  padding: 12px 0;
   text-decoration: none;
-  color: black;
-  font-family: "Oswald", sans-serif;
+  color: $black;
+  font-family: $basic-font-title;
   text-transform: uppercase;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    // border-bottom: 2px solid $starbur;
+  }
 }
+
+// .navigation__item--current {
+//   border-bottom: 2px solid $starbur;
+// }

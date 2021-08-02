@@ -3,9 +3,14 @@
 }
 
 .footer__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+  &:focus {
+    opacity: 0.6;
+  }
 }
-.logo {
-}
+
 .footer__section {
 }
 .socials {
@@ -15,13 +20,20 @@
 .socials__list {
   padding: 0;
   list-style: none;
+  border-top: 1px solid $orochimaru;
+  border-bottom: 1px solid $orochimaru;
 }
 .socials__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .socials__link {
 }
-.social__link {
+.socials__icon {
 }
+
 .copyright {
   font-family: $basic-font-text;
   font-style: normal;

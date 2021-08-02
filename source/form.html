@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
+
   <title>HTML Academy: Кэт энерджи</title>
 
 </head>
@@ -22,8 +24,8 @@
         <img class="header__text-image" src="../source/img/logo/logo-text.svg" alt="Cat Energy" width="101" height="18">
       </a>
       <nav class="header__navigation navigation">
-        <button class="header__navigation-toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+        <button class="navigation__toggle navigation__toggle--open" type="button" aria-label="Открыть или закрыть меню">
+          <span class="visually-hidden">Открыть или закрыть меню</span>
         </button>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--current">
@@ -40,7 +42,7 @@
     </div>
   </header>
   <main class="main">
-    <section class="form-page">
+    <section class="form-page container">
       <h2 class="form-page__title">Подбор программы</h2>
       <p class="form-page__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form method="get" action="https://echo.htmlacademy.ru" class="form-page__form form">
@@ -94,7 +96,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__group form__group--message form-group">
-          <legend class="form-group__title">Комментаарий</legend>
+          <legend class="form-group__title">Комментарий</legend>
           <label for="form-message" class="form-group__label visually-hidden">Текст письма:</label>
           <textarea name="message" id="form-message" class="form-group__input form-group__input--textarea"
             placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -122,7 +124,7 @@
           </ul>
         </fieldset>
         <button type="submit" class="basic-button">Отправить заявку</button>
-        <p class="form__info"> * - обязательные поля</p>
+        <p class="form__info"> * &mdash; обязательные поля</p>
       </form>
     </section>
     <section class="contacts">
@@ -133,7 +135,6 @@
       </div>
       <div class="contacts__map">
         <h2 class="visually-hidden">Карта</h2>
-        <!-- будет карта -->
       </div>
     </section>
   </main>
@@ -147,18 +148,18 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a href="blank.html" class="socials__link" aria-label="Вконтакте" target="_blank">
-              <img src="../source/img/socials/icon_vkontakte.svg" width="23" height="16" alt="VK" class="social__icon">
+              <img src="../source/img/socials/icon_vkontakte.svg" width="23" height="16" alt="VK" class="socials__icon">
             </a>
           </li>
           <li class="socials__item">
-            <a href="blank.html" class="social__link" aria-label="Инстаграм" target="_blank">
+            <a href="blank.html" class="socials__link" aria-label="Инстаграм" target="_blank">
               <img src="../source/img/socials/icon_instagram.svg" width="16" height="16" alt="Inst"
-                class="social__icon">
+                class="socials__icon">
             </a>
           </li>
           <li class="socials__item">
             <a href="blank.html" class="socials__link" aria-label="Фейсбук" target="_blank">
-              <img src="../source/img/socials/icon_facebook.svg" width="22" height="22" alt="FB" class="social__icon">
+              <img src="../source/img/socials/icon_facebook.svg" width="22" height="22" alt="FB" class="socials__icon">
             </a>
           </li>
         </ul>
