@@ -13,33 +13,32 @@
 
 <body class="page__body">
 
-  <header class="header">
-    <div class="container">
-      <a href="index.html" class="header__logo link">
-        <picture class="header__images">
-          <img src="../source/img/logo/logo-mobile.svg" alt="Cat Energy" width="33" height="37" class="header__image">
-        </picture>
-      </a>
-      <a href="index.html" class="header__logo link">
-        <img class="header__text-image" src="../source/img/logo/logo-text.svg" alt="Cat Energy" width="101" height="18">
-      </a>
-      <nav class="header__navigation navigation">
-        <button class="navigation__toggle navigation__toggle--open" type="button" aria-label="Открыть или закрыть меню">
-          <span class="visually-hidden">Открыть или закрыть меню</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current">
-            <a href="index.html" class="navigation__link">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a href="catalog.html" class="navigation__link">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a href="form.html" class="navigation__link">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+  <header class="header container">
+    <a href="index.html" class="header__logo link">
+      <picture class="header__images">
+        <source srcset="../source/img/logo/logo-desktop.svg" media="(min-width: 1440px)" />
+        <source srcset="../source/img/logo/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1439px)">
+        <img src="../source/img/logo/logo-mobile.svg" alt="Cat Energy" width="33" height="37" class="header__image">
+      </picture>
+    </a>
+    <a href="index.html" class="header__text-logo link">
+      <img class="header__text-image" src="../source/img/logo/logo-text.svg" alt="Cat Energy" width="101" height="18">
+    </a>
+    <nav class="header__navigation navigation">
+      <button class="navigation__toggle navigation__toggle--active" type="button" aria-label="Открыть или закрыть меню">
+        <span></span></button>
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item--current">
+          <a href="index.html" class="navigation__link">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a href="catalog.html" class="navigation__link">Каталог продукции</a>
+        </li>
+        <li class="navigation__item">
+          <a href="form.html" class="navigation__link">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="main">
     <section class="form-page container">

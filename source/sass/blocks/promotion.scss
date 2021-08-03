@@ -1,24 +1,55 @@
+.promotion {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
 .promotion__wrapper {
   min-width: 320px;
   min-height: 302px;
   background: url("/source/img/promotion/promo-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 117px;
+    background: none;
+    width: 415px;
+    min-height: 0;
+  }
 }
 
 .promotion__content {
   background: $starbur-085;
   min-width: 320px;
   min-height: 304px;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    min-width: 320px;
+    min-height: 0;
+  }
 }
 
 .promotion__title {
+  margin: 0;
+  padding-top: 27px;
   font-family: $basic-font-title;
   font-weight: normal;
   text-align: center;
   font-size: 36px;
   line-height: 36px;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    color: $black;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .promotion__subtitle {
@@ -29,13 +60,53 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $white;
+  margin: 0;
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 41px;
+    padding-bottom: 49px;
+    text-align: left;
+  }
+}
+
+.promotion__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+  margin-top: -135px;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+    padding-bottom: 0px;
+    margin-top: -83px;
+    z-index: -1;
+  }
 }
 
 .promotion__image {
-  max-width: 280px;
+  width: 280px;
   height: 270px;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
 }
 
 .promotion__link {
   margin: 0 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 117px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 0;
+    width: 244px;
+    order: 3;
+  }
 }
