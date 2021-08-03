@@ -2,8 +2,11 @@
   background: $plaster;
 }
 
-.example__info {
-  @media (min-width: $tablet-width) {
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
   }
 }
 
@@ -41,6 +44,10 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 440px;
+  }
 }
 
 .example__wrapper {
@@ -55,8 +62,16 @@
     grid-template-columns: min-content min-content 1fr;
     column-gap: 42px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    justify-content: space-between;
+    column-gap: 32px;
+  }
 }
-//
 
 .example__item {
   border: 1px solid #cdcdcd;
@@ -68,6 +83,10 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    width: 122px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 122px;
   }
 }
@@ -100,12 +119,9 @@
   line-height: 12px;
   text-align: center;
   color: $goshawk-grey;
-
-  //
   display: block;
   width: 80px;
   background-color: $plaster;
-
   position: absolute;
   left: calc(50% - 40px);
   top: 45px;
@@ -138,12 +154,21 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin-top: 0px;
+    margin-top: 0;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
 
     grid-column: 3 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 75px;
   }
 }
 
@@ -151,6 +176,10 @@
   padding: 0;
   padding-right: 5px;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 63px;
+  }
 }
 
 .expenses__price {
@@ -161,9 +190,9 @@
 .slider {
   margin-top: 42px;
   padding-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     margin-top: 64px;
-    margin-bottom: 25px;
   }
 }
 
@@ -187,10 +216,4 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
-}
-
-@media (min-width: $tablet-width) {
-}
-
-@media (min-width: $desktop-width) {
 }

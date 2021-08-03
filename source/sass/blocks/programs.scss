@@ -13,6 +13,11 @@
     display: grid;
     grid-gap: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+  }
 }
 
 .programs__item {
@@ -46,6 +51,10 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 214px;
+  }
 }
 
 .programs__item--slim {
@@ -66,6 +75,13 @@
         height: 211px;
         top: 81px;
         left: calc(100% - 211px - 62px);
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 100px;
+        height: 106px;
+        top: 41px;
+        left: 52px;
       }
     }
   }
@@ -89,6 +105,13 @@
         height: 200px;
         top: 91px;
         left: calc(100% - 268px - 28px);
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 134px;
+        height: 100px;
+        top: 47px;
+        left: 33px;
       }
     }
   }
@@ -115,10 +138,16 @@
     margin-right: 316px;
     padding-top: 24px;
     padding-left: 52px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     border: none;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 73px;
+    margin-right: 0;
+    padding-right: 51px;
   }
 }
 
@@ -144,7 +173,6 @@
   @media (min-width: $tablet-width) {
     margin-top: auto;
     margin-left: 52px;
-
     margin-bottom: 53px;
     font-size: 20px;
     line-height: 30px;
