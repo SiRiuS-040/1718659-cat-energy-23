@@ -212,6 +212,20 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    z-index: 4;
+  }
+}
+
+.navigation__link--covered {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $desktop-width) {
     color: $white;
     z-index: 4;
   }
@@ -222,6 +236,12 @@
     border-bottom: 2px solid $starbur;
   }
 
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $starbur;
+  }
+}
+
+.navigation__item--current-covered {
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $white;
   }

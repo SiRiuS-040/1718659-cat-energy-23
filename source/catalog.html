@@ -25,13 +25,13 @@
       <img class="header__text-image" src="../source/img/logo/logo-text.svg" alt="Cat Energy" width="101" height="18">
     </a>
     <nav class="header__navigation navigation">
-      <button class="navigation__toggle navigation__toggle--active" type="button" aria-label="Открыть или закрыть меню">
-        <span></span></button>
+      <button class="navigation__toggle" type="button" aria-label="Открыть или закрыть меню">
+        <span class="navigation__icon navigation__icon--active"></span></button>
       <ul class="navigation__list">
-        <li class="navigation__item navigation__item--current">
+        <li class="navigation__item">
           <a href="index.html" class="navigation__link">Главная</a>
         </li>
-        <li class="navigation__item">
+        <li class="navigation__item navigation__item--current">
           <a href="catalog.html" class="navigation__link">Каталог продукции</a>
         </li>
         <li class="navigation__item">
@@ -157,16 +157,17 @@
           </dl>
           <a href="#" class="product-card__button basic-button" aria-label="Заказать товар">Заказать</a>
         </li>
-        <li class="catalog__item product-card product-card--assortment">
-          <h3 class="product-card__title">Показать ещё 100500 товаров</h3>
-          <p class="product-card__icon">+</p>
-          <p class="product-card__info">На самом деле вкусов гораздо больше!</p>
-          <a href="#" class="product-card__button basic-button" aria-label="Показать все">Показать все</a>
+        <li class="catalog__item product-card assortment">
+          <h3 class="product-card__title assortment__title">Показать ещё 100500 товаров</h3>
+          <p class="assortment__icon"></p>
+          <p class="product-card__info assortment__info">На самом деле вкусов гораздо больше!</p>
+          <a href="#" class="product-card__button assortment__button basic-button" aria-label="Показать все">Показать
+            все</a>
         </li>
       </ul>
     </section>
     <section class="addition container">
-      <h2 class="addition__title">Дополнительные товары</h2>
+      <h4 class="addition__title">Дополнительные товары</h4>
       <ul class="addition__list">
         <li class="addition__item addition-item">
           <h3 class="addition-item__title">Сахарозаменитель</h3>
@@ -208,17 +209,17 @@
     <section class="contacts">
       <div class="contacts__container container">
         <h4 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h4>
-        <p class="contacts__address contacts__address--street">ул. Большая Конюшенная, д. 19/8</p>
-        <p class="contacts__address contacts__address--city">Санкт-Петербург</p>
+        <p class="contacts__address contacts__address--street">ул. Большая Конюшенная, д. 19/8
+          <span class="contacts__address contacts__address--city">Санкт-Петербург</span>
+        </p>
       </div>
-      <div class="contacts__map">
-        <h2 class="visually-hidden">Карта</h2>
-        <!-- будет карта -->
-      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1628014568403!5m2!1sru!2sru"
+        style="border:0;" allowfullscreen="" loading="lazy" class="contacts__map"></iframe>
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="footer__container container">
       <a href="index.html" class="footer__logo logo">
         <img src="../source/img/logo/logo-footer.svg" alt="Логотип футера" width="128" height="24">
       </a>
@@ -245,9 +246,9 @@
       </section>
       <section class="footer__section copyright">
         <h2 class="visually-hidden">Наша академия</h2>
-        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="copyright__link">HTML Academy
-          <img src="../source/img/logo/logo-html-academy.svg" alt="Логотип HTML Academy" class="copyright__icon">
-        </a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="copyright__link">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="copyright__link">
+          <img src="../source/img/logo/logo-html-academy.svg" alt="Логотип HTML Academy" class="copyright__icon"></a>
       </section>
     </div>
   </footer>
