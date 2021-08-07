@@ -1,8 +1,9 @@
 .contacts {
-  background-color: $white;
+  background-color: $bleached-silk;
 
   @media (min-width: $desktop-width) {
     position: relative;
+    background-color: $white;
   }
 }
 
@@ -20,12 +21,10 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-
     z-index: 4;
     position: absolute;
     top: 95px;
     left: 0;
-
     background-color: $white;
     margin-left: 110px;
     padding: 66px 0 51px 0;
@@ -45,7 +44,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 22px;
     width: 170px;
     padding-left: 41px;
   }

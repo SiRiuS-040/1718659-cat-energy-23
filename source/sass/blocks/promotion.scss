@@ -12,27 +12,11 @@
   }
 }
 
-// .promotion__wrapper {
-//   background: url("/source/img/promotion/promo-background-mobile.jpg");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-
-//   @media (min-width: $tablet-width) {
-//     padding-left: 117px;
-//     background: none;
-//     width: 415px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     grid-area: 1 / 1 / 2 / 2;
-//   }
-// }
-
 .promotion__content {
   min-width: 320px;
   min-height: 304px;
 
-  background: url("/source/img/promotion/promo-background-mobile.jpg");
+  background: url("../../source/img/promotion/promo-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -205,7 +189,7 @@
     height: 694px;
     margin-top: 0;
     grid-area: 1 / 2 / 3 / 3;
-    background: url("/source/img/promotion/promo-background-desktop.jpg") no-repeat $starbur-085;
+    background: url("../../source/img/promotion/promo-background-desktop.jpg") no-repeat $starbur-085;
     background-size: cover;
   }
 }

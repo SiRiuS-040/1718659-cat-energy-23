@@ -27,7 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 245px 245px 245px 245px;
   }
 }
 
@@ -99,24 +99,24 @@
 
 .advantages__item--leaf {
   &::before {
-    content: url("/source/img/advantages/icon_leaf.svg");
+    content: url("../../source/img/advantages/icon_leaf.svg");
   }
 }
 
 .advantages__item--water {
   &::before {
-    content: url("/source/img/advantages/icon_tub.svg");
+    content: url("../../source/img/advantages/icon_tub.svg");
   }
 }
 
 .advantages__item--fork {
   &::before {
-    content: url("/source/img/advantages/icon_eat.svg");
+    content: url("../../source/img/advantages/icon_eat.svg");
   }
 }
 
 .advantages__item--weight {
   &::before {
-    content: url("/source/img/advantages/icon_alarm.svg");
+    content: url("../../source/img/advantages/icon_alarm.svg");
   }
 }
