@@ -5,17 +5,13 @@
 .container {
   width: auto;
   padding: 0 20px;
-}
 
-@media (min-width: 768px) {
-  .container {
+  @media (min-width: $tablet-width) {
     width: auto;
     padding: 0 30px;
   }
-}
 
-@media (min-width: 1440px) {
-  .container {
+  @media (min-width: $desktop-width) {
     width: auto;
     padding: 0 110px;
   }
