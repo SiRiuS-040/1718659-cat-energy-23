@@ -1,0 +1,30 @@
+.slider {
+  margin-top: 42px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+  }
+}
+
+.slider__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__label {
+  font-family: $basic-font-title;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+}
