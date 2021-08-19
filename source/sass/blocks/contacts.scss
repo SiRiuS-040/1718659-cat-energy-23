@@ -1,0 +1,31 @@
+.contacts {
+  background-color: $bleached-silk;
+}
+
+.contacts__title {
+  padding: 28px 0;
+  margin: 0;
+  font-family: $basic-font-title;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dreamless-sleep;
+}
+
+.contacts__address {
+  margin: 0;
+  padding: 0;
+  font-family: $basic-font-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $goshawk-grey;
+
+  &:last-of-type {
+    padding-top: 0;
+    padding-bottom: 28px;
+  }
+}

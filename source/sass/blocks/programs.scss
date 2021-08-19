@@ -1,0 +1,52 @@
+.programs__list {
+  list-style: none;
+  padding: 0;
+}
+
+.programs__item {
+  background: $bleached-silk;
+  margin: 10px 0;
+}
+
+.programs__title {
+  font-family: $basic-font-title;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.programs__description {
+  font-family: $basic-font-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $goshawk-grey;
+}
+
+.programs__link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-family: $basic-font-title;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $black;
+  width: 134px;
+  padding: 4px 0;
+
+  &::after {
+    content: url("/source/img/icons/icon_arrow.svg");
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}

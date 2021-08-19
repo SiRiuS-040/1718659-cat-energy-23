@@ -1,0 +1,24 @@
+.basic-button {
+  outline: none;
+  border: none;
+  font-family: $basic-font-title;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  background: $starbur;
+  padding: 7px 0;
+
+  &:hover {
+    background: $grass;
+  }
+
+  &:active {
+    color: $white-030;
+  }
+}

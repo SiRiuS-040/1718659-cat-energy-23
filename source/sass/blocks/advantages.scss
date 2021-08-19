@@ -1,0 +1,66 @@
+.advantages__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+}
+
+.advantages__list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+.advantages__item {
+  display: flex;
+  align-items: flex-start;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $starbur;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 60px;
+    flex-shrink: 0;
+  }
+}
+
+.advantages__desc {
+  margin-left: 20px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $goshawk-grey;
+}
+
+.advantages__item--leaf {
+  &::before {
+    content: url("/source/img/advantages/icon_leaf.svg");
+  }
+}
+
+.advantages__item--water {
+  &::before {
+    content: url("/source/img/advantages/icon_tub.svg");
+  }
+}
+
+.advantages__item--fork {
+  &::before {
+    content: url("/source/img/advantages/icon_eat.svg");
+  }
+}
+
+.advantages__item--weight {
+  &::before {
+    content: url("/source/img/advantages/icon_alarm.svg");
+  }
+}

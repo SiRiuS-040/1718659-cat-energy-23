@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 
 </head>
@@ -22,8 +23,8 @@
         <img class="header__text-image" src="../source/img/logo/logo-text.svg" alt="Cat Energy" width="101" height="18">
       </a>
       <nav class="header__navigation navigation">
-        <button class="header__navigation-toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+        <button class="navigation__toggle navigation__toggle--open" type="button" aria-label="Открыть или закрыть меню">
+          <span class="visually-hidden">Открыть или закрыть меню</span>
         </button>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--current">
@@ -156,16 +157,15 @@
           </dl>
           <a href="#" class="product-card__button basic-button" aria-label="Заказать товар">Заказать</a>
         </li>
-        <li class="catalog__item product-card">
-          <h3 class="product-card__title product-card__title--assortment">Показать ещё 100500 товаров</h3>
-          <p class="product-card__info">+</p>
+        <li class="catalog__item product-card product-card--assortment">
+          <h3 class="product-card__title">Показать ещё 100500 товаров</h3>
+          <p class="product-card__icon">+</p>
           <p class="product-card__info">На самом деле вкусов гораздо больше!</p>
-          <a href="#" class="product-card__button product-card__button--assortment basic-button"
-            aria-label="Показать все">Показать все</a>
+          <a href="#" class="product-card__button basic-button" aria-label="Показать все">Показать все</a>
         </li>
       </ul>
     </section>
-    <section class="addition">
+    <section class="addition container">
       <h2 class="addition__title">Дополнительные товары</h2>
       <ul class="addition__list">
         <li class="addition__item addition-item">
@@ -227,18 +227,18 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a href="blank.html" class="socials__link" aria-label="Вконтакте" target="_blank">
-              <img src="../source/img/socials/icon_vkontakte.svg" width="23" height="16" alt="VK" class="social__icon">
+              <img src="../source/img/socials/icon_vkontakte.svg" width="23" height="16" alt="VK" class="socials__icon">
             </a>
           </li>
           <li class="socials__item">
-            <a href="blank.html" class="social__link" aria-label="Инстаграм" target="_blank">
+            <a href="blank.html" class="socials__link" aria-label="Инстаграм" target="_blank">
               <img src="../source/img/socials/icon_instagram.svg" width="16" height="16" alt="Inst"
-                class="social__icon">
+                class="socials__icon">
             </a>
           </li>
           <li class="socials__item">
             <a href="blank.html" class="socials__link" aria-label="Фейсбук" target="_blank">
-              <img src="../source/img/socials/icon_facebook.svg" width="22" height="22" alt="FB" class="social__icon">
+              <img src="../source/img/socials/icon_facebook.svg" width="22" height="22" alt="FB" class="socials__icon">
             </a>
           </li>
         </ul>

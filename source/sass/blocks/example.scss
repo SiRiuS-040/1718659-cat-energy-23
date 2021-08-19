@@ -1,0 +1,66 @@
+.example {
+  background: $plaster;
+}
+
+.example__title {
+  font-family: $basic-font-title;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $black;
+}
+
+.example__desc {
+  font-family: $basic-font-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $goshawk-grey;
+}
+
+.example__text {
+  margin: 0;
+  font-family: $basic-font-title;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black;
+}
+
+.example__label {
+  margin: 0;
+  font-family: $basic-font-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $goshawk-grey;
+}
+
+.expenses {
+  font-family: $basic-font-title;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.expenses__text {
+  padding: 0;
+  margin: 0;
+}
+
+.expenses__price {
+  padding: 0;
+  margin: 0;
+}

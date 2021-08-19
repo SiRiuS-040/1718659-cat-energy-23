@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
+
   <title>HTML Academy: Кэт энерджи</title>
 
 </head>
@@ -22,8 +24,8 @@
         <img class="header__text-image" src="../source/img/logo/logo-text.svg" alt="Cat Energy" width="101" height="18">
       </a>
       <nav class="header__navigation navigation">
-        <button class="header__navigation-toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+        <button class="navigation__toggle navigation__toggle--open" type="button" aria-label="Открыть или закрыть меню">
+          <span class="visually-hidden">Открыть или закрыть меню</span>
         </button>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--current">
@@ -41,12 +43,14 @@
   </header>
   <main class="main">
     <section class="promotion">
-      <div class="promotion__content">
-        <h1 class="promotion__title">Функциональное питание для котов</h1>
-        <p class="promotion__subtitle">Занялся собой? Займись котом!</p>
+      <div class="promotion__wrapper">
+        <div class="promotion__content">
+          <h1 class="promotion__title">Функциональное питание для котов</h1>
+          <p class="promotion__subtitle">Занялся собой? Займись котом!</p>
+        </div>
       </div>
       <picture class="promotion__images">
-        <img src="../source/img/header/index-can-mobile.png" alt="Фотография рациона питания" width="280" height="270"
+        <img src="/source/img/promotion/index-can-mobile.png" alt="Фотография рациона питания" width="280" height="270"
           class="promotion__image">
       </picture>
       <a class="promotion__link basic-button container" href="#">Подобрать программу</a>
@@ -56,7 +60,7 @@
       <ul class="programs__list">
         <li class="programs__item">
           <h3 class="programs__title">Похудение</h3>
-          <img src="../source/img/programs/icon-slim.svg" alt="логотип программы похудения" class="programs__icon"
+          <img src="/source/img/programs/icon-slim.svg" alt="логотип программы похудения" class="programs__icon"
             width="50" height="53">
           <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по
             деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -74,20 +78,20 @@
     </section>
     <section class="advantages container">
       <h2 class="advantages__title">Как это работает</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item features__item--leaf">
+      <ul class="advantages__list ">
+        <li class="advantages__item advantages__item--leaf">
           <p class="advantages__desc ">Функциональное питание содержит только полезные
             питательные вещества.</p>
         </li>
-        <li class="advantages__item features__item--water">
+        <li class="advantages__item advantages__item--water">
           <p class="advantages__desc">Выпускается в виде порошка, который нужно лишь
             залить кипятком и готово. </p>
         </li>
-        <li class="advantages__item features__item--fork">
+        <li class="advantages__item advantages__item--fork">
           <p class="advantages__desc">Замените один-два приема обычной еды на наше
             функциональное питание.</p>
         </li>
-        <li class="advantages__item features__item--weight">
+        <li class="advantages__item advantages__item--weight">
           <p class="advantages__desc">Уже через месяц наслаждайтесь изменениями к лучшему
             вашего питомца!</p>
         </li>
@@ -155,27 +159,29 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a href="blank.html" class="socials__link" aria-label="Вконтакте" target="_blank">
-              <img src="../source/img/socials/icon_vkontakte.svg" width="23" height="16" alt="VK" class="social__icon">
+              <img src="../source/img/socials/icon_vkontakte.svg" width="23" height="16" alt="VK" class="socials__icon">
             </a>
           </li>
           <li class="socials__item">
-            <a href="blank.html" class="social__link" aria-label="Инстаграм" target="_blank">
+            <a href="blank.html" class="socials__link" aria-label="Инстаграм" target="_blank">
               <img src="../source/img/socials/icon_instagram.svg" width="16" height="16" alt="Inst"
-                class="social__icon">
+                class="socials__icon">
             </a>
           </li>
           <li class="socials__item">
             <a href="blank.html" class="socials__link" aria-label="Фейсбук" target="_blank">
-              <img src="../source/img/socials/icon_facebook.svg" width="22" height="22" alt="FB" class="social__icon">
+              <img src="../source/img/socials/icon_facebook.svg" width="22" height="22" alt="FB" class="socials__icon">
             </a>
           </li>
         </ul>
       </section>
       <section class="footer__section copyright">
         <h2 class="visually-hidden">Наша академия</h2>
-        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="copyright__link">HTML Academy
-          <img src="../source/img/logo/logo-html-academy.svg" alt="Логотип HTML Academy" class="copyright__icon">
-        </a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="copyright__link">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="copyright__link">
+          <img src="../source/img/logo/logo-html-academy.svg" alt="Логотип HTML Academy" class="copyright__icon"></a>
+
+
       </section>
     </div>
   </footer>

@@ -1,0 +1,39 @@
+.footer {
+  background: $bleached-silk;
+}
+
+.footer__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.socials__list {
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid $orochimaru;
+  border-bottom: 1px solid $orochimaru;
+}
+
+.socials__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-family: $basic-font-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: $goshawk-grey;
+}
