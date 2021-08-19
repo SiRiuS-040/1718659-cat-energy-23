@@ -1,10 +1,15 @@
 .advantages__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $basic-font-title;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
@@ -12,11 +17,30 @@
   padding: 0;
   display: grid;
   grid-row-gap: 20px;
+  counter-reset: myCounter;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    grid-gap: 60px;
+    row-gap: 37px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 245px 245px 245px 245px;
+  }
 }
 
 .advantages__item {
   display: flex;
   align-items: flex-start;
+  list-style: none;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    height: 280px;
+  }
 
   &::before {
     content: "";
@@ -28,39 +52,71 @@
     align-items: center;
     flex-basis: 60px;
     flex-shrink: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      flex-basis: 80px;
+      margin-top: 40px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      color: $bleached-silk;
+      position: absolute;
+      top: 0;
+      left: 110px;
+      display: inline-block;
+      text-align: center;
+      font-size: 280px;
+      line-height: 280px;
+      z-index: -1;
+    }
   }
 }
 
 .advantages__desc {
+  min-width: 200px;
+  margin: auto 0;
   margin-left: 20px;
-  font-family: "Arial", sans-serif;
+  font-family: $basic-font-text;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $goshawk-grey;
+
+  @media (min-width: $tablet-width) {
+    margin: 31px 100px 0 0;
+    min-width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .advantages__item--leaf {
   &::before {
-    content: url("/source/img/advantages/icon_leaf.svg");
+    content: url("../../source/img/advantages/icon_leaf.svg");
   }
 }
 
 .advantages__item--water {
   &::before {
-    content: url("/source/img/advantages/icon_tub.svg");
+    content: url("../../source/img/advantages/icon_tub.svg");
   }
 }
 
 .advantages__item--fork {
   &::before {
-    content: url("/source/img/advantages/icon_eat.svg");
+    content: url("../../source/img/advantages/icon_eat.svg");
   }
 }
 
 .advantages__item--weight {
   &::before {
-    content: url("/source/img/advantages/icon_alarm.svg");
+    content: url("../../source/img/advantages/icon_alarm.svg");
   }
 }
