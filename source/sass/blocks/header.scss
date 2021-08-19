@@ -205,6 +205,8 @@
   @media (min-width: $desktop-width) {
     z-index: 4;
     margin-right: 110px;
+    margin-left: auto;
+    width: 50%;
   }
 }
 
@@ -250,7 +252,7 @@
   }
 }
 
-.navigation__link--covered {
+.navigation__link--white {
   &:hover {
     opacity: 0.6;
   }
@@ -275,7 +277,7 @@
   }
 }
 
-.navigation__item--current-covered {
+.navigation__item--current-white {
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $white;
   }
