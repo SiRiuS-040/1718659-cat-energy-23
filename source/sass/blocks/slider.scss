@@ -13,18 +13,8 @@
   align-items: center;
 }
 
-.slider-control {
+.slider__controls {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.slider__label {
-  font-family: $basic-font-title;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $black;
 }

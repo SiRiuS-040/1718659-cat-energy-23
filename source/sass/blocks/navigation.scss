@@ -70,26 +70,6 @@
   }
 }
 
-// .navigation__toggle {
-//   &:hover {
-//     .navigation__icon {
-//       background-color: transparent;
-
-//       &::before {
-//         top: 0;
-//         transform: rotate(45deg);
-//         transition-delay: 0.3s;
-//       }
-
-//       &::after {
-//         top: 0;
-//         transform: rotate(-45deg);
-//         transition-delay: 0.3s;
-//       }
-//     }
-//   }
-// }
-
 .navigation__list {
   list-style: none;
   padding: 0;
@@ -100,8 +80,6 @@
   flex-direction: column;
   width: 100%;
   background-color: $white;
-
-  // position: absolute;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -123,6 +101,10 @@
     margin-left: auto;
     width: 50%;
   }
+}
+
+.navigation__list--over {
+  position: absolute;
 }
 
 .navigation__item {
