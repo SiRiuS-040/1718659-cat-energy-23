@@ -24,9 +24,8 @@
     <a href="index.html" class="header__text-logo link">
       <img class="header__text-image" src="img/logo/logo-text.svg" alt="Cat Energy" width="101" height="18">
     </a>
-    <nav class="header__navigation navigation">
-      <button class="navigation__toggle" type="button" aria-label="Открыть или закрыть меню">
-        <span class="navigation__icon navigation__icon--active"></span></button>
+    <nav class="header__navigation navigation navigation--opened navigation--nojs">
+      <button class="navigation__toggle" type="button" aria-label="Открыть или закрыть меню"></button>
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--current navigation__item--current-white">
           <a href="#" class="navigation__link navigation__link--white">Главная</a>
@@ -200,6 +199,25 @@
     </div>
   </footer>
 
+  <script>
+    var navMain = document.querySelector('.navigation');
+    var navToggle = document.querySelector('.navigation__toggle');
+
+    navMain.classList.remove('navigation--nojs');
+    navMain.classList.remove('navigation--opened');
+    navMain.classList.add('navigation--closed');
+
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('navigation--closed')) {
+        navMain.classList.remove('navigation--closed');
+        navMain.classList.add('navigation--opened');
+      } else {
+        navMain.classList.add('navigation--closed');
+        navMain.classList.remove('navigation--opened');
+      }
+    });
+  </script>
 
 </body>
 
