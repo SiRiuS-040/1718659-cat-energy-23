@@ -18,7 +18,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
+  text-align: left;
   color: $black;
 
   @media (min-width: $tablet-width) {
@@ -51,7 +51,7 @@
 }
 
 .example__wrapper {
-  margin-top: 20px;
+  margin-top: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -74,7 +74,7 @@
 .example__item {
   border: 1px solid #cdcdcd;
   border-radius: 3px;
-  padding: 14px 20px 18px 20px;
+  padding: 14px 20px 16px 20px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -130,55 +130,4 @@
     top: 57px;
     padding: 5px;
   }
-}
-
-.expenses {
-  width: 100%;
-  margin-top: 26px;
-  font-family: $basic-font-title;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $black;
-  display: flex;
-  justify-content: center;
-  grid-column: 1 / -1;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-    margin-top: 0;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
-
-    grid-column: 3 / -1;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 60px;
-    grid-column: 1 / -1;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-bottom: 75px;
-  }
-}
-
-.expenses__text {
-  padding: 0;
-  padding-right: 5px;
-  margin: 0;
-
-  @media (min-width: $desktop-width) {
-    padding-right: 63px;
-  }
-}
-
-.expenses__price {
-  padding: 0;
-  margin: 0;
 }
