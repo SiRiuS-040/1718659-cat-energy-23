@@ -5,6 +5,10 @@
     position: relative;
     background-color: $white;
   }
+
+  &--white {
+    background-color: $white;
+  }
 }
 
 .contacts__container {
