@@ -11,6 +11,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 45px;
   }
 }
 
@@ -23,9 +24,11 @@
   counter-reset: myCounter;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 40px 0;
     justify-content: space-between;
     grid-gap: 60px;
     row-gap: 37px;
+    column-gap: 40px;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -60,7 +63,7 @@
       width: 80px;
       height: 80px;
       flex-basis: 80px;
-      margin-top: 40px;
+      margin-top: 34px;
     }
   }
 
@@ -70,7 +73,8 @@
       content: counter(myCounter);
       color: $bleached-silk;
       position: absolute;
-      top: 0;
+      font-family: $basic-font-title;
+      top: -5px;
       left: 110px;
       display: inline-block;
       text-align: center;

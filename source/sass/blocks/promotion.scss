@@ -85,7 +85,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding-top: 64px;
+    padding-top: 23px;
     color: $black;
     text-align: left;
     font-size: 60px;
@@ -137,6 +137,7 @@
   @media (min-width: $tablet-width) {
     order: 4;
     padding-bottom: 0;
+    margin-left: 0;
     margin-top: -83px;
     z-index: -2;
   }
@@ -171,10 +172,10 @@
   margin: 0 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 117px;
+    margin: 0 0 0 120px;
     font-size: 20px;
     line-height: 20px;
-    padding: 15px 0;
+    padding: 17px 0;
     width: 244px;
     order: 3;
   }

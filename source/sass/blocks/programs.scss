@@ -1,7 +1,3 @@
-.programs {
-  margin-top: 22px;
-}
-
 .programs__list {
   list-style: none;
   margin: 0;
@@ -73,8 +69,8 @@
       @media (min-width: $tablet-width) {
         width: 200px;
         height: 211px;
-        top: 81px;
-        left: calc(100% - 211px - 62px);
+        top: 80px;
+        left: calc(100% - 200px - 62px);
       }
 
       @media (min-width: $desktop-width) {
