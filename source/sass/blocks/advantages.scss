@@ -1,6 +1,7 @@
 .advantages__title {
-  margin-top: 27px;
-  margin-bottom: 38px;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 38px;
   font-family: $basic-font-title;
   font-style: normal;
   font-weight: normal;
@@ -11,11 +12,11 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 45px;
+    padding-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 73px;
+    padding-top: 73px;
   }
 }
 

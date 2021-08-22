@@ -13,7 +13,7 @@
     &::before {
       content: "";
       position: absolute;
-      right: 0px;
+      right: 0;
       top: -130px;
       width: 50%;
       height: calc(100% + 130px);
@@ -23,7 +23,7 @@
     &::after {
       content: "";
       position: absolute;
-      right: 0px;
+      right: 0;
       top: -130px;
       width: 50%;
       height: calc(100% + 130px);

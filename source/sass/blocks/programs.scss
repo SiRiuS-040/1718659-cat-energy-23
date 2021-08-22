@@ -182,9 +182,16 @@
   &::after {
     content: "";
     background-image: url("../../source/img/icons/icon_arrow.svg");
+    background-position: -8px;
     background-repeat: no-repeat;
     width: 32px;
     height: 12px;
+  }
+
+  &:hover {
+    &::after {
+      background-position: 0;
+    }
   }
 
   &:focus {

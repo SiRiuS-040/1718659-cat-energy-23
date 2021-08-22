@@ -130,9 +130,13 @@
             </picture>
           </div>
           <div class="slider__controls slider-control">
-            <label for="range" class="slider-control__label">Было</label>
-            <input type="range" id="range" min="0" max="100">
-            <label for="range" class="slider-control__label">Стало</label>
+            <label for="input" class="slider-control__label slider-control__label--before">Было</label>
+            <div class="slider-control__switch-button switch-button">
+              <input class="switch-button__checkbox" type="checkbox" id="input"></input>
+              <label class="switch-button__label slider-control__label" for="input"></label>
+            </div>
+            <input type="range" id="input" min="0" max="100" class="slider-control__input slider-control__input--range">
+            <label for="input" class="slider-control__label slider-control__label--after">Стало</label>
           </div>
         </div>
       </div>
