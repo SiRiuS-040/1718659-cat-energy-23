@@ -1,0 +1,20 @@
+.slider {
+  margin-top: 42px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+  }
+}
+
+.slider__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
