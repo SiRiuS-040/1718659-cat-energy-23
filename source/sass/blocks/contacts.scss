@@ -51,6 +51,10 @@
     width: 170px;
     padding-left: 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 76px;
+  }
 }
 
 .contacts__address {
@@ -73,16 +77,21 @@
     text-align: right;
   }
 
-  .contacts__address--city {
-    @media (min-width: $tablet-width) {
-      display: block;
-      padding-top: 18px;
-    }
+  @media (min-width: $desktop-width) {
+    padding-right: 74px;
+    text-align: left;
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      display: block;
-      padding-top: 18px;
-    }
+.contacts__address--city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-top: 18px;
   }
 }
 
