@@ -3,7 +3,7 @@
   display: grid;
 
   @media (min-width: $tablet-width) {
-    padding: 24px 30px 24px 30px;
+    padding: 24px 0 24px 0;
     grid-template-columns: min-content 1fr;
     align-items: center;
   }
@@ -40,6 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 0;
     width: 202px;
     height: 59px;
   }
