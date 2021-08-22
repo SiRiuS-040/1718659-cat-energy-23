@@ -1,8 +1,17 @@
 .slider-control {
   margin-top: 27px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
     margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+    margin-top: 25px;
   }
 }
 

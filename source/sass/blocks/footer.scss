@@ -2,13 +2,18 @@
   background: $bleached-silk;
 }
 
-.footer__container {
+.footer__wrapper {
   display: grid;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 41px;
     padding-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 47px;
+    padding-bottom: 47px;
   }
 }
 

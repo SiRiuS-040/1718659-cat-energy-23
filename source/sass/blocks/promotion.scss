@@ -1,5 +1,6 @@
 .promotion {
   position: relative;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -12,7 +13,7 @@
     &::before {
       content: "";
       position: absolute;
-      right: 0;
+      right: 0px;
       top: -130px;
       width: 50%;
       height: calc(100% + 130px);
@@ -22,7 +23,7 @@
     &::after {
       content: "";
       position: absolute;
-      right: 0;
+      right: 0px;
       top: -130px;
       width: 50%;
       height: calc(100% + 130px);
