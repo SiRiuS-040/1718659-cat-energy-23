@@ -8,10 +8,6 @@
     background: $plaster;
     background-size: 50% auto;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 110px;
-  }
 }
 
 .slider__visual {
@@ -26,7 +22,8 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -190px;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    margin-left: 0;
   }
 }
 

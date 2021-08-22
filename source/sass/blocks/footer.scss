@@ -4,16 +4,20 @@
 
 .footer__wrapper {
   display: grid;
+  width: auto;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 41px;
-    padding-bottom: 61px;
+
+    width: auto;
+    padding: 41px 30px 61px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 47px;
-    padding-bottom: 47px;
+    padding: 47px 0 47px 0;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
