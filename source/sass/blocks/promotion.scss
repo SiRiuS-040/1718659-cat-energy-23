@@ -7,15 +7,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 582px;
+    min-height: 565px;
 
     &::before {
       content: "";
       position: absolute;
       right: 0;
-      top: -112px;
+      top: -130px;
       width: 50%;
-      height: calc(100% + 112px);
+      height: calc(100% + 130px);
       background: $starbur-085;
     }
 
@@ -23,9 +23,9 @@
       content: "";
       position: absolute;
       right: 0;
-      top: -112px;
+      top: -130px;
       width: 50%;
-      height: calc(100% + 112px);
+      height: calc(100% + 130px);
       margin-top: 0;
       background: url("../../source/img/promotion/promo-background-desktop.jpg") no-repeat $starbur-085;
       background-size: cover;
@@ -66,7 +66,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 0;
-    margin-top: 111px;
+    margin-top: 95px;
     margin-left: 190px;
   }
 }
@@ -123,7 +123,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 40px;
-    padding-bottom: 52px;
+    padding-bottom: 51px;
   }
 }
 
@@ -143,8 +143,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 29px;
-    margin-left: 38%;
+    margin-top: 12px;
+    margin-left: 39%;
     position: absolute;
     height: 499px;
     width: 552px;
@@ -181,7 +181,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 8px 0;
+    padding: 17px 0;
     margin: 0 0 0 190px;
   }
 }

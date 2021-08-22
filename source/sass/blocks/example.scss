@@ -1,5 +1,10 @@
 .example {
   background: $plaster;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
 }
 
 .example__container {
@@ -12,7 +17,7 @@
 
 .example__title {
   margin: 0;
-  padding: 27px 0 33px 0;
+  padding: 27px 0 33px 20px;
   font-family: $basic-font-title;
   font-style: normal;
   font-weight: normal;
@@ -25,7 +30,21 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    padding: 45px 0 63px 0;
+    padding: 45px 0 63px 30px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 0 74px 110px;
+    background-color: $white;
+  }
+}
+
+.example__info {
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    padding-bottom: 59px;
+    margin-bottom: 198px;
   }
 }
 
@@ -130,5 +149,6 @@
     left: calc(50% - 65px - 5px);
     top: 57px;
     padding: 5px;
+    background-color: $white;
   }
 }

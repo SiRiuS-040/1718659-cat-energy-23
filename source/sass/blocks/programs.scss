@@ -2,15 +2,19 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 22px;
+
   display: grid;
   grid-gap: 20px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     display: grid;
     grid-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 82px;
     grid-template-columns: 1fr 1fr;
     grid-gap: 80px;
   }
