@@ -78,7 +78,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../../source/img/programs/icon-slim.svg");
+      background-image: url("../img/programs/icon-slim.svg");
       background-repeat: no-repeat;
       background-size: cover;
       width: 50px;
@@ -108,7 +108,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../../source/img/programs/icon-pro.svg");
+      background-image: url("../img/programs/icon-pro.svg");
       background-repeat: no-repeat;
       background-size: cover;
       width: 67px;
@@ -197,7 +197,7 @@
 
   &::after {
     content: "";
-    background-image: url("../../source/img/icons/icon_arrow.svg");
+    background-image: url("../img/icons/icon_arrow.svg");
     background-position: -8px;
     background-repeat: no-repeat;
     width: 32px;
