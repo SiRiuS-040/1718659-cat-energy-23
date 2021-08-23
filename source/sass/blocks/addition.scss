@@ -1,4 +1,6 @@
 .addition {
+  background-color: $white;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 80% 20%;
@@ -6,9 +8,16 @@
   }
 }
 
+.addition__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-top: 2px solid #68b738;
+}
+
 .addition__title {
   margin: 0;
-  padding: 25px 0 36px 0;
+  padding: 25px 20px 34px 20px;
   color: $black;
   font-family: $basic-font-title;
   font-style: normal;
@@ -19,7 +28,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 68px 0 80px 0;
+    padding: 68px 30px 80px 30px;
     margin: 0 0 0 38px;
   }
 
@@ -31,5 +40,11 @@
 .addition__list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 30px;
+    border: 1px solid #cdcdcd;
+  }
 }

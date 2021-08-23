@@ -1,5 +1,6 @@
 .assortment {
-  padding: 0 0 25px 0;
+  padding-top: 0;
+  padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
@@ -16,34 +17,40 @@
   grid-area: 2 / 1 / 3 / 3;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 23px auto;
+    margin: 0 auto 20px auto;
     padding: 0;
   }
 }
 
-.assortment__icons {
+// .assortment__icons {
+//   padding-top: 24px;
+//   padding-bottom: 24px;
+//   grid-area: 1 / 1 / 2 / 3;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   @media (min-width: $tablet-width) {
+//     padding-top: 50px;
+//     padding-bottom: 49px;
+//     order: -1;
+//   }
+// }
+
+.assortment__icon {
+  margin: 0 auto;
   padding-top: 24px;
   padding-bottom: 24px;
   grid-area: 1 / 1 / 2 / 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 30px;
+  height: 30px;
 
   @media (min-width: $tablet-width) {
     padding-top: 50px;
     padding-bottom: 49px;
     order: -1;
-  }
-}
-
-.assortment__icon {
-  width: 30px;
-  height: 30px;
-
-  @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
-    order: -1;
   }
 }
 
