@@ -1,0 +1,53 @@
+.switch-button {
+  margin: 0 16px;
+  border: 1px solid $compact-disc-grey;
+  background: $white;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 82px;
+  height: 12px;
+  position: relative;
+  padding-right: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.switch-button__checkbox {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 76px;
+  height: 6px;
+  opacity: 0;
+  z-index: 2;
+
+  &:checked + .switch-button__label::before {
+    transform: translateX(37px);
+    transition: transform 300ms linear;
+  }
+
+  & + .switch-button__label {
+    position: relative;
+    padding: 15px 0;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+
+    &::before {
+      content: "";
+      background: $starbur;
+      height: 6px;
+      width: 35px;
+      position: absolute;
+      left: 5px;
+      top: 3px;
+      border-radius: 30px;
+      transform: translateX(0);
+      transition: transform 300ms;
+    }
+  }
+}

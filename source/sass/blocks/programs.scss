@@ -1,20 +1,36 @@
 .programs {
-  margin-top: 22px;
+  width: auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 
 .programs__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 22px;
+
   display: grid;
   grid-gap: 20px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     display: grid;
     grid-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 82px;
     grid-template-columns: 1fr 1fr;
     grid-gap: 80px;
   }
@@ -73,8 +89,8 @@
       @media (min-width: $tablet-width) {
         width: 200px;
         height: 211px;
-        top: 81px;
-        left: calc(100% - 211px - 62px);
+        top: 80px;
+        left: calc(100% - 200px - 62px);
       }
 
       @media (min-width: $desktop-width) {
@@ -123,7 +139,7 @@
   padding-top: 29px;
   padding-left: 20px;
   margin-right: 20px;
-  padding-bottom: 27px;
+  padding-bottom: 22px;
   font-family: $basic-font-text;
   font-style: normal;
   font-weight: normal;
@@ -167,8 +183,8 @@
   width: 134px;
   padding: 4px 0;
   margin-left: 20px;
-  margin-top: 19px;
-  margin-bottom: 22px;
+  margin-top: 15px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
@@ -182,9 +198,16 @@
   &::after {
     content: "";
     background-image: url("../../source/img/icons/icon_arrow.svg");
+    background-position: -8px;
     background-repeat: no-repeat;
     width: 32px;
     height: 12px;
+  }
+
+  &:hover {
+    &::after {
+      background-position: 0;
+    }
   }
 
   &:focus {

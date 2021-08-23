@@ -1,4 +1,23 @@
+.advantages {
+  width: auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
 .advantages__title {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 38px;
   font-family: $basic-font-title;
   font-style: normal;
   font-weight: normal;
@@ -9,25 +28,34 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 73px;
   }
 }
 
 .advantages__list {
   list-style: none;
   padding: 0;
+  margin: 0 0 42px 0;
   display: grid;
   grid-row-gap: 20px;
   counter-reset: myCounter;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 40px 0;
     justify-content: space-between;
     grid-gap: 60px;
     row-gap: 37px;
+    column-gap: 40px;
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 245px 245px 245px 245px;
+    margin: 0;
   }
 }
 
@@ -57,7 +85,7 @@
       width: 80px;
       height: 80px;
       flex-basis: 80px;
-      margin-top: 40px;
+      margin-top: 34px;
     }
   }
 
@@ -67,7 +95,8 @@
       content: counter(myCounter);
       color: $bleached-silk;
       position: absolute;
-      top: 0;
+      font-family: $basic-font-title;
+      top: -5px;
       left: 110px;
       display: inline-block;
       text-align: center;

@@ -2,6 +2,9 @@
 $white: #ffffff;
 $white-030: rgba(255, 255, 255, 0.3);
 $black: #000000;
+$black-040: rgba(0, 0, 0, 0.4);
+$black-020: rgba(0, 0, 0, 0.2);
+$black-016: rgba(0, 0, 0, 0.16);
 $bleached-silk: #f2f2f2; // basic_grey
 $mercury: #ebebeb; // special_grey-2
 $plaster: #eaeaea; //
@@ -23,4 +26,4 @@ $basic-font-text: "Arial", sans-serif;
 // Viewports
 $tablet-width: 768px;
 $desktop-width: 1440px;
-$mobile-width: 767px;
+$mobile-width-only: 767px;

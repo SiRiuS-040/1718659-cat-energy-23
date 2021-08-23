@@ -2,13 +2,22 @@
   background: $bleached-silk;
 }
 
-.footer__container {
+.footer__wrapper {
   display: grid;
+  width: auto;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 55px;
-    padding-bottom: 61px;
+
+    width: auto;
+    padding: 41px 30px 61px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 0 47px 0;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -16,8 +25,8 @@
   display: flex;
   justify-content: center;
   align-self: center;
-  margin-top: 39px;
-  margin-bottom: 32px;
+  margin-top: 35px;
+  margin-bottom: 31px;
 
   &:hover {
     opacity: 0.8;

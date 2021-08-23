@@ -24,9 +24,8 @@
     <a href="index.html" class="header__text-logo link">
       <img class="header__text-image" src="img/logo/logo-text.svg" alt="Cat Energy" width="101" height="18">
     </a>
-    <nav class="header__navigation navigation">
-      <button class="navigation__toggle" type="button" aria-label="Открыть или закрыть меню">
-        <span class="navigation__icon navigation__icon--active"></span></button>
+    <nav class="header__navigation navigation navigation--opened navigation--nojs">
+      <button class="navigation__toggle" type="button" aria-label="Открыть или закрыть меню"></button>
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--current navigation__item--current-white">
           <a href="#" class="navigation__link navigation__link--white">Главная</a>
@@ -47,12 +46,14 @@
         <p class="promotion__subtitle">Занялся собой? Займись котом!</p>
       </div>
       <picture class="promotion__images">
+        <source srcset="img/promotion/index-can.png" media="(min-width: 1440px)" />
+        <source srcset="img/promotion/index-can-tablet.png" media="(min-width: 768px) and (max-width: 1439px)">
         <img src="img/promotion/index-can-mobile.png" alt="Фотография рациона питания" width="280" height="270"
           class="promotion__image">
       </picture>
-      <a class="promotion__link basic-button container" href="#">Подобрать программу</a>
+      <a class="promotion__link basic-button" href="#">Подобрать программу</a>
     </section>
-    <section class="programs container">
+    <section class="programs">
       <h2 class="visually-hidden">Предлагаем программы питания для вашего питомца</h2>
       <ul class="programs__list">
         <li class="programs__item programs__item--slim">
@@ -69,7 +70,7 @@
         </li>
       </ul>
     </section>
-    <section class="advantages container">
+    <section class="advantages">
       <h2 class="advantages__title">Как это работает</h2>
       <ul class="advantages__list ">
         <li class="advantages__item advantages__item--leaf">
@@ -91,9 +92,9 @@
       </ul>
     </section>
     <section class="example">
-      <div class="example__container container">
+      <h2 class="example__title">Живой пример</h2>
+      <div class="example__container">
         <div class="example__info">
-          <h2 class="example__title">Живой пример</h2>
           <p class="example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой
             обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих
             привычек и по-прежнему спит по 16 часов в день. </p>
@@ -115,26 +116,34 @@
         <div class="example__slider slider">
           <h3 class="visually-hidden">Наглядный пример изменений!</h3>
           <div class="slider__visual">
-            <picture class="slider__images slider__images--before">
+            <picture class="slider__images slider__images--before ">
+              <source srcset="img/slider/cat-fat.png" media="(min-width: 1440px)" />
+              <source srcset="img/slider/cat-fat.png" media="(min-width: 768px) and (max-width: 1439px)">
               <img src="img/slider/before-mobile.png" alt="Питомец до программы"
                 class="slider__image slider__image--before" width="311" height="232">
             </picture>
             <picture class="slider__images slider__images--after visually-hidden">
+              <source srcset="img/slider/cat-skinny.png" media="(min-width: 1440px)" />
+              <source srcset="img/slider/cat-skinny.png" media="(min-width: 768px) and (max-width: 1439px)">
               <img src="img/slider/after-mobile.png" alt="Питомец после программы"
                 class="slider__image slider__image--after" width="251" height="240">
             </picture>
           </div>
           <div class="slider__controls slider-control">
-            <label for="range" class="slider-control__label">Было</label>
-            <input type="range" id="range" min="0" max="100">
-            <label for="range" class="slider-control__label">Стало</label>
+            <label for="input" class="slider-control__label slider-control__label--before">Было</label>
+            <div class="slider-control__switch-button switch-button">
+              <input class="switch-button__checkbox" type="checkbox" id="input"></input>
+              <label class="switch-button__label slider-control__label" for="input"></label>
+            </div>
+            <input type="range" id="input" min="0" max="100" class="slider-control__input slider-control__input--range">
+            <label for="input" class="slider-control__label slider-control__label--after">Стало</label>
           </div>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <section class="footer__section contacts">
+    <section class="contacts contacts--white-bg">
       <div class="contacts__container container">
         <h4 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h4>
         <p class="contacts__address contacts__address--street">ул. Большая Конюшенная, д. 19/8
@@ -145,7 +154,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1628014568403!5m2!1sru!2sru"
         style="border:0;" allowfullscreen="" loading="lazy" class="contacts__map"></iframe>
     </section>
-    <div class="footer__container container">
+    <div class="footer__wrapper">
       <a href="#" class="footer__logo logo">
         <img src="img/logo/logo-footer.svg" alt="Логотип футера" width="128" height="24">
       </a>
@@ -200,6 +209,25 @@
     </div>
   </footer>
 
+  <script>
+    var navMain = document.querySelector('.navigation');
+    var navToggle = document.querySelector('.navigation__toggle');
+
+    navMain.classList.remove('navigation--nojs');
+    navMain.classList.remove('navigation--opened');
+    navMain.classList.add('navigation--closed');
+
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('navigation--closed')) {
+        navMain.classList.remove('navigation--closed');
+        navMain.classList.add('navigation--opened');
+      } else {
+        navMain.classList.add('navigation--closed');
+        navMain.classList.remove('navigation--opened');
+      }
+    });
+  </script>
 
 </body>
 

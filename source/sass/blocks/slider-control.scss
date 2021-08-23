@@ -1,3 +1,21 @@
+.slider-control {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    margin-top: 18px;
+    margin-left: 85px;
+    margin-right: auto;
+  }
+}
+
 .slider-control__label {
   font-family: $basic-font-title;
   font-style: normal;
@@ -6,4 +24,66 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted $black-040;
+
+    &:hover {
+      border-bottom: 1px solid $black-040;
+    }
+
+    &:focus-within {
+      border-bottom: none;
+    }
+  }
+}
+
+.slider-control__input--range {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    width: 428px;
+    appearance: none;
+    margin: 0 22px;
+    padding: 23px 0;
+    background: $plaster;
+
+    &::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 6px;
+      cursor: pointer;
+      background: $compact-disc-grey;
+      border-radius: 3px;
+    }
+
+    &::-webkit-slider-thumb {
+      border: 1px solid $compact-disc-grey;
+      height: 34px;
+      width: 34px;
+      border-radius: 50px;
+      cursor: pointer;
+      appearance: none;
+      margin-top: -14px;
+      background: $starbur;
+      box-shadow: inset $white 0 0 0 12px;
+      filter: drop-shadow(0 1px 3px $black-016);
+    }
+
+    &:hover {
+      &::-webkit-slider-thumb {
+        filter: drop-shadow(0 2px 4px $black-020);
+      }
+    }
+
+    &:focus {
+      &::-webkit-slider-thumb {
+        border: 1px solid $starbur;
+        filter: drop-shadow(0 3px 5px $black-020);
+      }
+    }
+  }
 }
