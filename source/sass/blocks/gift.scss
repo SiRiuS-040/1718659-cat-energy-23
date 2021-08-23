@@ -9,6 +9,7 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
+    margin: 66px 30px 76px 30px;
     background-image: url("../../source/img/catalog/gift-photo-tablet.jpg");
     min-height: 200px;
     position: relative;
