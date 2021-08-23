@@ -2,6 +2,12 @@
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1220px;
+  }
 }
 
 .catalog__title {
@@ -19,6 +25,10 @@
     padding: 24px 0 163px 0;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0 164px 0;
   }
 }
 

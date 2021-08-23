@@ -18,6 +18,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 110px;
+    width: 244px;
+    grid-area: 2 / 2 / 3 / 3;
     min-width: 20%;
     background-image: url("../img/catalog/gift-photo-desktop.jpg");
   }
