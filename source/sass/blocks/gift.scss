@@ -19,7 +19,10 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-right: 110px;
+    // margin-right: 300px;
+
+    margin-right: calc((100% / 4));
+
     width: 244px;
     grid-area: 2 / 2 / 3 / 3;
     min-width: 20%;
