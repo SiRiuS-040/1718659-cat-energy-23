@@ -41,13 +41,13 @@
     </nav>
   </header>
   <main class="main">
-    <section class="form-page container">
+    <section class="form-page">
       <h2 class="form-page__title">Подбор программы</h2>
-      <p class="form-page__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="form-page__subtitle">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
       <form method="get" action="https://echo.htmlacademy.ru" class="form-page__form form">
         <fieldset class="form__group form__group--info form-group">
           <h3 class="visually-hidden">Введите сведения о питомце</h3>
-          <ul class="form-group__list form-pet">
+          <ul class="form-group__list form-group__list--form-pet">
             <li class="form-group__item">
               <label for="pet-name" class="form-group__label">Имя:*</label>
               <input type="text" name="pet-name" id="pet-name" class="form-group__input" placeholder="Барсик" required>
@@ -62,7 +62,7 @@
             </li>
           </ul>
           <h3 class="visually-hidden">Выберите программу питания</h3>
-          <ul class="form-group__list form-programs">
+          <ul class="form-group__list form-group__list--form-programs">
             <li class="form-group__item">
               <input type="radio" name="program-selection" value="slim" id="slimming" class="form-group__radio" checked>
               <label for="slimming" class="form-group__label">Похудение</label>
