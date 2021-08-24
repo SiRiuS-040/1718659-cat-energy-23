@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  border-top: 2px solid #68b738;
+  border-top: 2px solid $starbur;
 }
 
 .additions__title {
@@ -50,7 +50,7 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0 30px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $compact-disc-grey;
   }
 
   @media (min-width: $desktop-width) {
