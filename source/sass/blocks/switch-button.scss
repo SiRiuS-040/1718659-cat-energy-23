@@ -20,8 +20,8 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 76px;
-  height: 6px;
+  width: 84px;
+  height: 13px;
   opacity: 0;
   z-index: 2;
 
@@ -50,4 +50,10 @@
       transition: transform 300ms;
     }
   }
+}
+
+.slider-control__label--current {
+  cursor: pointer;
+  pointer-events: none;
+  border-bottom: 1px solid transparent;
 }

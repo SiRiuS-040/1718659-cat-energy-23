@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/normalize.css">
 
   <title>HTML Academy: Кэт энерджи</title>
 
@@ -123,7 +124,7 @@
               <img src="img/slider/before-mobile.png" alt="Питомец до программы"
                 class="slider__image slider__image--before" width="311" height="232">
             </picture>
-            <picture class="slider__images slider__images--after visually-hidden">
+            <picture class="slider__images slider__images--after slider__images--hidden">
               <source srcset="img/slider/cat-skinny.png" media="(min-width: 1440px)" />
               <source srcset="img/slider/cat-skinny.png" media="(min-width: 768px) and (max-width: 1439px)">
               <img src="img/slider/after-mobile.png" alt="Питомец после программы"
@@ -133,10 +134,10 @@
           <div class="slider__controls slider-control">
             <label for="input" class="slider-control__label slider-control__label--before">Было</label>
             <div class="slider-control__switch-button switch-button">
-              <input class="switch-button__checkbox" type="checkbox" id="input"></input>
-              <label class="switch-button__label slider-control__label" for="input"></label>
+              <input class="switch-button__checkbox" type="checkbox" id="input">
+              <label class="switch-button__label slider-control__label"></label>
             </div>
-            <input type="range" id="input" min="0" max="100" class="slider-control__input slider-control__input--range">
+            <input type="range" min="0" max="100" class="slider-control__input slider-control__input--range">
             <label for="input" class="slider-control__label slider-control__label--after">Стало</label>
           </div>
         </div>
@@ -210,25 +211,9 @@
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.navigation');
-    var navToggle = document.querySelector('.navigation__toggle');
+  <script src="js/navigation.js"></script>
+  <script src="js/slider-mobile.js"></script>
 
-    navMain.classList.remove('navigation--nojs');
-    navMain.classList.remove('navigation--opened');
-    navMain.classList.add('navigation--closed');
-
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('navigation--closed')) {
-        navMain.classList.remove('navigation--closed');
-        navMain.classList.add('navigation--opened');
-      } else {
-        navMain.classList.add('navigation--closed');
-        navMain.classList.remove('navigation--opened');
-      }
-    });
-  </script>
 
 </body>
 

@@ -45,7 +45,6 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-
     width: 428px;
     appearance: none;
     margin: 0 22px;
@@ -87,3 +86,20 @@
     }
   }
 }
+
+// .slider-control__label--before {
+//   color: red;
+// }
+
+// .switch-button.switch-button__checkbox:checked + .slider-control__label--before {
+//   color: red;
+// }
+
+// .slider-control__label--before > .switch-button__checkbox:checked {
+//   background-color: red;
+// }
+
+// .switch-button__checkbox:checked + .slider-control__label--before {
+//   color: red;
+// }
+
