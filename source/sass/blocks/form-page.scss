@@ -52,9 +52,11 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 54px;
-    margin-bottom: 66px;
+    margin-bottom: 62px;
     padding-left: 70px;
     padding-right: 70px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {

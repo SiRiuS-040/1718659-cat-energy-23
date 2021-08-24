@@ -73,6 +73,10 @@
   flex-direction: column;
   justify-content: start;
 
+  @media (min-width: $tablet-width) {
+    height: auto;
+  }
+
   .form-group__item {
     margin: 25px 0 0 0;
     margin-left: 17px;
@@ -85,6 +89,10 @@
 
     &:last-of-type {
       margin-bottom: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 35px;
     }
   }
 
@@ -117,6 +125,13 @@
       height: 26px;
       width: 26px;
       border-radius: 50px;
+
+      @media (min-width: $tablet-width) {
+        height: 40px;
+        width: 40px;
+        top: -4px;
+        left: -61px;
+      }
     }
   }
 
@@ -124,6 +139,10 @@
     &::before {
       background: $starbur;
       box-shadow: inset $white 0 0 0 6px;
+
+      @media (min-width: $tablet-width) {
+        box-shadow: inset $white 0 0 0 11px;
+      }
     }
   }
 
