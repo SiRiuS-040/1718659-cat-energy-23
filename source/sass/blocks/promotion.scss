@@ -28,7 +28,7 @@
       width: 50%;
       height: calc(100% + 130px);
       margin-top: 0;
-      background: url("../../source/img/promotion/promo-background-desktop.jpg") no-repeat $starbur-085;
+      background: url("../img/promotion/promo-background-desktop.jpg") no-repeat $starbur-085;
       background-size: cover;
       z-index: -1;
     }
@@ -37,7 +37,7 @@
 
 .promotion__content {
   min-height: 302px;
-  background: url("../../source/img/promotion/promo-background-mobile.jpg");
+  background: url("../img/promotion/promo-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
 
   <title>HTML Academy: Кэт энерджи</title>
 
@@ -40,13 +41,13 @@
     </nav>
   </header>
   <main class="main">
-    <section class="form-page container">
+    <section class="form-page">
       <h2 class="form-page__title">Подбор программы</h2>
-      <p class="form-page__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="form-page__subtitle">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
       <form method="get" action="https://echo.htmlacademy.ru" class="form-page__form form">
         <fieldset class="form__group form__group--info form-group">
           <h3 class="visually-hidden">Введите сведения о питомце</h3>
-          <ul class="form-group__list form-pet">
+          <ul class="form-group__list form-group__list--form-pet">
             <li class="form-group__item">
               <label for="pet-name" class="form-group__label">Имя:*</label>
               <input type="text" name="pet-name" id="pet-name" class="form-group__input" placeholder="Барсик" required>
@@ -61,7 +62,7 @@
             </li>
           </ul>
           <h3 class="visually-hidden">Выберите программу питания</h3>
-          <ul class="form-group__list form-programs">
+          <ul class="form-group__list form-group__list--form-programs">
             <li class="form-group__item">
               <input type="radio" name="program-selection" value="slim" id="slimming" class="form-group__radio" checked>
               <label for="slimming" class="form-group__label">Похудение</label>
@@ -138,7 +139,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1628014568403!5m2!1sru!2sru"
         style="border:0;" allowfullscreen="" loading="lazy" class="contacts__map"></iframe>
     </section>
-    <div class="footer__wrapper container">
+    <div class="footer__wrapper">
       <a href="index.html" class="footer__logo logo">
         <img src="img/logo/logo-footer.svg" alt="Логотип футера" width="128" height="24">
       </a>
@@ -193,25 +194,9 @@
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.navigation');
-    var navToggle = document.querySelector('.navigation__toggle');
 
-    navMain.classList.remove('navigation--nojs');
-    navMain.classList.remove('navigation--opened');
-    navMain.classList.add('navigation--closed');
+  <script src="js/navigation.js"></script>
 
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('navigation--closed')) {
-        navMain.classList.remove('navigation--closed');
-        navMain.classList.add('navigation--opened');
-      } else {
-        navMain.classList.add('navigation--closed');
-        navMain.classList.remove('navigation--opened');
-      }
-    });
-  </script>
 
 </body>
 

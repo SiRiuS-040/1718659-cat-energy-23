@@ -3,6 +3,11 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    border-top: 1px solid $abundance-of-tingle;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
   }
 }
 
@@ -108,7 +113,7 @@
 }
 
 .example__item {
-  border: 1px solid #cdcdcd;
+  border: 1px solid $compact-disc-grey;
   border-radius: 3px;
   padding: 14px 20px 16px 20px;
   position: relative;
