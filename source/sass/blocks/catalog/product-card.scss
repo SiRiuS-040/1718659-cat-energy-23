@@ -58,6 +58,7 @@
 }
 
 .product-card__image {
+  display: block;
   @media (min-width: $tablet-width) {
     margin-top: -88px;
   }
