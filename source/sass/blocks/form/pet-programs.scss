@@ -1,0 +1,50 @@
+.pet-programs {
+  height: 114px;
+  padding-top: 27px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid $orochimaru;
+  border-top: 1px solid $orochimaru;
+  color: $black-out;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: start;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    padding-left: 20px;
+    border: 1px solid $orochimaru;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 28px 25px 28px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.pet-programs__item {
+  margin: 25px 0 0 0;
+  margin-left: 17px;
+  display: flex;
+  align-items: center;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 26px;
+  }
+}

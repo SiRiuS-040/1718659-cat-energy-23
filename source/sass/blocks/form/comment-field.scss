@@ -1,0 +1,17 @@
+.comment-field {
+  border-top: 2px solid $starbur;
+}
+
+.comment-field__title {
+  padding-top: 23px;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: calc((100% - 1220px) / 2 - 40px);
+  }
+}
