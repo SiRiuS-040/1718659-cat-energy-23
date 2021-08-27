@@ -21,7 +21,7 @@
 
   <header class="header">
     <a href="index.html" class="header__logo link">
-      <picture class="header__images">
+      <picture>
         <source srcset="img/logo/logo-desktop.svg" media="(min-width: 1440px)" />
         <source srcset="img/logo/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1439px)">
         <img src="img/logo/logo-mobile.svg" alt="Cat Energy" width="33" height="37" class="header__image">
@@ -51,12 +51,14 @@
         <h1 class="promotion__title">Функциональное питание для котов</h1>
         <p class="promotion__subtitle">Занялся собой? Займись котом!</p>
       </div>
-      <picture class="promotion__images">
-        <source srcset="img/promotion/index-can.png" media="(min-width: 1440px)" />
-        <source srcset="img/promotion/index-can-tablet.png" media="(min-width: 768px) and (max-width: 1439px)">
-        <img src="img/promotion/index-can-mobile.png" alt="Фотография рациона питания" width="280" height="270"
-          class="promotion__image">
-      </picture>
+      <div class="promotion__images">
+        <picture>
+          <source srcset="img/promotion/index-can.png" media="(min-width: 1440px)" />
+          <source srcset="img/promotion/index-can-tablet.png" media="(min-width: 768px) and (max-width: 1439px)">
+          <img src="img/promotion/index-can-mobile.png" alt="Фотография рациона питания" width="280" height="270"
+            class="promotion__image">
+        </picture>
+      </div>
       <a class="promotion__link basic-button" href="#">Подобрать программу</a>
     </section>
     <section class="programs">
