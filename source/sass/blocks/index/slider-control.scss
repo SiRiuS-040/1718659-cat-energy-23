@@ -1,5 +1,5 @@
 .slider-control {
-  margin-top: 28px;
+  margin-top: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,19 +86,3 @@
     }
   }
 }
-
-// .slider-control__label--before {
-//   color: red;
-// }
-
-// .switch-button.switch-button__checkbox:checked + .slider-control__label--before {
-//   color: red;
-// }
-
-// .slider-control__label--before > .switch-button__checkbox:checked {
-//   background-color: red;
-// }
-
-// .switch-button__checkbox:checked + .slider-control__label--before {
-//   color: red;
-// }
