@@ -35,10 +35,10 @@
   }
 }
 
-.copyright__icon {
+.copyright__logo-academy {
+  fill: $squant;
+
   &:hover {
-    path {
-      fill: $starbur;
-    }
+    fill: $starbur;
   }
 }

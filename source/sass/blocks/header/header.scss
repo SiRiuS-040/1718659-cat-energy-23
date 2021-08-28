@@ -50,6 +50,14 @@
   position: absolute;
   margin: 13px 0 0 110px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
     margin-left: 110px;
