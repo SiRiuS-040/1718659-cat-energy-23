@@ -54,6 +54,13 @@
   @media (min-width: $tablet-width) {
     margin-bottom: auto;
     order: -1;
+    margin-bottom: 30px;
+    max-width: 168px;
+    max-height: 206px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
   }
 }
 
@@ -62,6 +69,8 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -88px;
+    width: auto;
+    height: auto;
   }
 }
 
