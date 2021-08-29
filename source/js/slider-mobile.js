@@ -23,4 +23,3 @@ sliderToggle.addEventListener('change', function (event) {
 
   // alert(event.target.checked);
 });
-

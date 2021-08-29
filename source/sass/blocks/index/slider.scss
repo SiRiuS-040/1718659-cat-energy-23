@@ -7,8 +7,6 @@
     padding-bottom: 58px;
     background: $plaster;
     background-size: 50% auto;
-
-    //
   }
 
   @media (min-width: $desktop-width) {
@@ -17,21 +15,14 @@
 }
 
 .slider__visual {
-  // display: flex;
-  // justify-content: center;
   height: 244px;
   margin: 0 auto;
   width: 320px;
-
-  //
-
   position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     width: 708px;
-
-    height: auto;
     height: 350px;
   }
 
@@ -47,12 +38,6 @@
     display: none;
   }
 }
-
-// .slider__image--hidden {
-//   display: none;
-// }
-
-//
 
 .slider__compare {
   position: absolute;
@@ -111,12 +96,10 @@
 .slider__image {
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    // width: 708px;
     height: 520px;
   }
 
   @media (min-width: $desktop-width) {
-    // width: 708px;
     height: 520px;
     margin: 0;
     margin-top: 0;
@@ -136,8 +119,5 @@
 .slider__image--after {
   @media (min-width: $tablet-width) {
     width: 545px;
-  }
-
-  @media (min-width: $desktop-width) {
   }
 }
