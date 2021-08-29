@@ -149,7 +149,7 @@
         <div class="example__slider slider">
           <h3 class="visually-hidden">Наглядный пример изменений!</h3>
           <div class="slider__visual">
-            <div class="slider__compare slider__compare--bottom">
+            <div class="slider__compare slider__compare--bottom" id="one">
               <picture>
                 <source srcset="img/slider/cat-fat.png 1x, img/slider/cat-fat@2x.png 2x" media="(min-width: 1440px)" />
                 <source srcset="img/slider/cat-fat.png 1x, img/slider/cat-fat@2x.png 2x"
@@ -177,7 +177,8 @@
               <input class="switch-button__checkbox" type="checkbox" id="input">
               <label class="switch-button__label slider-control__label"></label>
             </div>
-            <input type="range" min="0" max="100" class="slider-control__input slider-control__input--range">
+            <input type="range" min="0" max="100" value="50" class="slider-control__input slider-control__input--range"
+              oninput="slider1()" id="range1">
             <label for="input" class="slider-control__label slider-control__label--after">Стало</label>
           </div>
         </div>
@@ -241,7 +242,7 @@
 
   <script src="js/navigation.js"></script>
   <script src="js/slider-mobile.js"></script>
-
+  <script src="js/slider-range.js"></script>
 
 </body>
 

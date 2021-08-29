@@ -94,4 +94,8 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background: $bleached-silk;
+  }
 }
