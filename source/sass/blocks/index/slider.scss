@@ -13,16 +13,25 @@
 .slider__visual {
   display: flex;
   justify-content: center;
+  height: 244px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     width: 708px;
+
+    height: auto;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -190px;
     justify-content: flex-start;
     margin-left: 0;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .slider__image--hidden {
+    display: none;
   }
 }
 

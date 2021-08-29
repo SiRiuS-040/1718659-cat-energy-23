@@ -1,5 +1,5 @@
 .slider-control {
-  margin-top: 32px;
+  margin-top: 19px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,18 +25,35 @@
   text-transform: uppercase;
   color: $black;
 
+  border-bottom: 1px dotted $black-040;
+
+  &:hover {
+    border-bottom: 1px solid $black-040;
+  }
+
+  &:focus-within {
+    border-bottom: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 1px dotted $black-040;
+    // border-bottom: 1px dotted $black-040;
 
-    &:hover {
-      border-bottom: 1px solid $black-040;
-    }
+    // &:hover {
+    //   border-bottom: 1px solid $black-040;
+    // }
 
-    &:focus-within {
-      border-bottom: none;
-    }
+    // &:focus-within {
+    //   border-bottom: none;
+    // }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .slider-control__label--deactivated {
+    pointer-events: none;
+    border-bottom: 1px solid transparent;
   }
 }
 
