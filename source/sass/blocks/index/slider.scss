@@ -8,65 +8,111 @@
     background: $plaster;
     background-size: 50% auto;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 58px;
+    background: $bleached-silk;
+  }
 }
 
 .slider__visual {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 244px;
+  margin: 0 auto;
+  width: 320px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     width: 708px;
+    height: 350px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -190px;
     justify-content: flex-start;
     margin-left: 0;
+    height: 334px;
   }
 }
 
-.slider__images {
+@media (max-width: $mobile-width-only) {
+  .slider__image--hidden {
+    display: none;
+  }
+}
+
+.slider__compare {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
+    position: absolute;
+    overflow: hidden;
     margin-top: -172px;
+    top: 0;
+
+    width: auto;
+    height: auto;
+
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, $white, $white), linear-gradient(to right, $plaster, $plaster);
+    background-position: 0 0, 0 172px;
+    background-size: 100% 172px, 100% auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    margin-top: -192px;
+    background-image: linear-gradient(to right, $white, $white),
+      linear-gradient(to right, $bleached-silk, $bleached-silk);
+    background-position: 0 0, 0 192px;
+    background-size: 100% 192px, 100% auto;
   }
 }
 
-.slider__images--hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.slider__compare--bottom {
+  @media (min-width: $tablet-width) {
+    margin-left: 15px;
+    z-index: 2;
+
+    width: 339px; // макс 707px наложение слайдера
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 3px;
+    width: 364px;
+  }
+}
+
+.slider__compare--top {
+  margin-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 106px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 94px;
+  }
 }
 
 .slider__image {
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    width: 708px;
     height: 520px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 708px;
     height: 520px;
     margin: 0;
+    margin-top: 0;
   }
 }
 
 .slider__image--before {
   @media (min-width: $tablet-width) {
-    width: 674px;
+    width: 677px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,11 +122,6 @@
 
 .slider__image--after {
   @media (min-width: $tablet-width) {
-    margin-left: 40px;
-    width: 602px;
-  }
-
-  @media (min-width: $desktop-width) {
     width: 545px;
   }
 }

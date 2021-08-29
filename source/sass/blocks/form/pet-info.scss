@@ -1,4 +1,6 @@
 .pet-info {
+  border: none;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 570px 570px;

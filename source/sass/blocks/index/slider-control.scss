@@ -1,11 +1,12 @@
 .slider-control {
-  margin-top: 28px;
+  margin-top: 19px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
+    margin-top: auto;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,18 +26,26 @@
   text-transform: uppercase;
   color: $black;
 
+  border-bottom: 1px dotted $black-040;
+
+  &:hover {
+    border-bottom: 1px solid $black-040;
+  }
+
+  &:focus-within {
+    border-bottom: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 1px dotted $black-040;
+  }
+}
 
-    &:hover {
-      border-bottom: 1px solid $black-040;
-    }
-
-    &:focus-within {
-      border-bottom: none;
-    }
+@media (max-width: $mobile-width-only) {
+  .slider-control__label--deactivated {
+    pointer-events: none;
+    border-bottom: 1px solid transparent;
   }
 }
 
@@ -85,20 +94,8 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background: $bleached-silk;
+  }
 }
-
-// .slider-control__label--before {
-//   color: red;
-// }
-
-// .switch-button.switch-button__checkbox:checked + .slider-control__label--before {
-//   color: red;
-// }
-
-// .slider-control__label--before > .switch-button__checkbox:checked {
-//   background-color: red;
-// }
-
-// .switch-button__checkbox:checked + .slider-control__label--before {
-//   color: red;
-// }
