@@ -12,6 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 62px;
     margin-left: calc((100% - 1220px) / 2 - 40px);
   }
 }
@@ -19,7 +20,6 @@
 .additional-goods__list {
   display: flex;
   flex-direction: column;
-
   padding-top: 15px;
   padding-bottom: 15px;
 
