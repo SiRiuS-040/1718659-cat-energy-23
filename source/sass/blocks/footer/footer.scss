@@ -9,13 +9,12 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
-
     width: auto;
     padding: 41px 30px 61px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 0 47px 0;
+    padding: 43px 0 47px 0;
     max-width: 1220px;
     margin: 0 auto;
   }

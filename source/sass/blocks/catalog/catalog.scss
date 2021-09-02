@@ -22,7 +22,8 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    padding: 24px 0 163px 0;
+    border-top: 0 solid $mercury;
+    padding: 25px 0 163px 0;
     font-size: 60px;
     line-height: 60px;
   }
