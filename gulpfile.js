@@ -150,10 +150,6 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
-exports.default = gulp.series(
-  styles, server, watcher
-);
-
 // Build
 
 const build = gulp.series(
