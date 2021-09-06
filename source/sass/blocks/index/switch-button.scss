@@ -17,11 +17,10 @@
 .switch-button__checkbox {
   cursor: pointer;
   position: absolute;
-  top: 0;
   left: 0;
   bottom: 0;
-  width: 84px;
-  height: 13px;
+  width: 74px;
+  height: 6px;
   opacity: 0;
   z-index: 2;
 
@@ -32,7 +31,7 @@
 
   & + .switch-button__label {
     position: relative;
-    padding: 15px 0;
+    padding: 10px 0;
     display: block;
     user-select: none;
     pointer-events: none;
