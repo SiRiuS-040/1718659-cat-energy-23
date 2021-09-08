@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="stylesheet" href="./css/normalize.min.css">
 
+  <link rel="preload" href="../fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -133,22 +136,34 @@
           <div class="slider__visual">
             <div class="slider__compare slider__compare--bottom" id="one">
               <picture>
+                <source srcset="img/slider/cat-fat.webp 1x, img/slider/cat-fat@2x.webp 2x"
+                  media="(min-width: 1440px)" />
+                <source srcset="img/slider/cat-fat.webp 1x, img/slider/cat-fat@2x.webp 2x"
+                  media="(min-width: 768px) and (max-width: 1439px)" />
+                <source srcset="img/slider/before-mobile.webp 1x, img/slider/before-mobile@2x.webp 2x" />
                 <source srcset="img/slider/cat-fat.png 1x, img/slider/cat-fat@2x.png 2x" media="(min-width: 1440px)" />
                 <source srcset="img/slider/cat-fat.png 1x, img/slider/cat-fat@2x.png 2x"
                   media="(min-width: 768px) and (max-width: 1439px)">
                 <img src="img/slider/before-mobile.png" srcset="img/slider/before-mobile@2x.png 2x"
-                  alt="Питомец до программы" class="slider__image slider__image--before" width="311" height="232">
+                  alt="Питомец до программы" class="slider__image slider__image--before" width="311" height="232"
+                  loading="lazy">
               </picture>
             </div>
             <div class="slider__compare slider__compare--top">
               <picture>
+                <source srcset="img/slider/cat-skinny.webp 1x, img/slider/cat-skinny@2x.webp 2x"
+                  media="(min-width: 1440px)" />
+                <source srcset="img/slider/cat-skinny.webp 1x, img/slider/cat-skinny@2x.webp 2x"
+                  media="(min-width: 768px) and (max-width: 1439px)" />
+                <source srcset="img/slider/after-mobile.webp 1x, img/slider/after-mobile@2x.webp 2x" />
+
                 <source srcset="img/slider/cat-skinny.png 1x, img/slider/cat-skinny@2x.png 2x"
                   media="(min-width: 1440px)" />
                 <source srcset="img/slider/cat-skinny.png 1x, img/slider/cat-skinny@2x.png 2x"
-                  media="(min-width: 768px) and (max-width: 1439px)">
+                  media="(min-width: 768px) and (max-width: 1439px)" />
                 <img src="img/slider/after-mobile.png" srcset="img/slider/after-mobile@2x.png 2x"
                   alt="Питомец после программы" class="slider__image slider__image--after slider__image--hidden"
-                  width="251" height="240">
+                  width="251" height="240" loading="lazy" />
               </picture>
             </div>
           </div>
@@ -181,7 +196,7 @@
     </section>
     <div class="footer__wrapper">
       <a href="#" class="footer__logo logo">
-        <img src="img/logo/logo-footer.svg" alt="Логотип футера" width="128" height="24">
+        <img src="img/logo/logo-footer.svg" alt="Логотип футера" width="128" height="24" loading="lazy">
       </a>
       <section class="footer__section socials">
         <h2 class="visually-hidden">Мы в сети!</h2>
