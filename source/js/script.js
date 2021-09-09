@@ -1,7 +1,7 @@
 // Меню навигации
 
-var navMain = document.querySelector('.navigation');
-var navToggle = document.querySelector('.navigation__toggle');
+let navMain = document.querySelector('.navigation');
+let navToggle = document.querySelector('.navigation__toggle');
 
 navMain.classList.remove('navigation--nojs');
 navMain.classList.remove('navigation--opened');
@@ -20,11 +20,11 @@ navToggle.addEventListener('click', function () {
 
 // Слайдер мобильной версии
 
-var beforeToggle = document.querySelector('.slider-control__label--before');
-var afterToggle = document.querySelector('.slider-control__label--after');
-var sliderToggle = document.querySelector('.switch-button__checkbox');
-var afterSlide = document.querySelector('.slider__image--after');
-var beforeSlide = document.querySelector('.slider__image--before');
+let beforeToggle = document.querySelector('.slider-control__label--before');
+let afterToggle = document.querySelector('.slider-control__label--after');
+let sliderToggle = document.querySelector('.switch-button__checkbox');
+let afterSlide = document.querySelector('.slider__image--after');
+let beforeSlide = document.querySelector('.slider__image--before');
 
 sliderToggle.addEventListener('change', function (event) {
   if (sliderToggle.checked) {
@@ -43,12 +43,10 @@ sliderToggle.addEventListener('change', function (event) {
 
 // Слайдер пл.  и дт версий
 
-var slideBottom = document.querySelector('.slider__compare--bottom');
+let slideBottom = document.querySelector('.slider__compare--bottom');
 
 function slider1() {
-  var rng = document.getElementById('range1');
-  var inputval;
-  inputval = rng.value;
-  resultwidth = (707 / 100 * inputval) + "px";
-  slideBottom.style.width = resultwidth;
+  let rng = document.getElementById('range1');
+  let inputval = rng.value;
+  slideBottom.style.width = (707 / 100 * inputval) + "px";
 };
