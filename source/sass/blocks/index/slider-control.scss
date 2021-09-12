@@ -27,13 +27,14 @@
   color: $black;
 
   border-bottom: 1px dotted $black-040;
+  cursor: pointer;
 
   &:hover {
     border-bottom: 1px solid $black-040;
   }
 
   &:focus-within {
-    border-bottom: none;
+    border-bottom: 1px solid transparent;
   }
 
   @media (min-width: $tablet-width) {
