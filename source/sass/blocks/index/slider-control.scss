@@ -107,9 +107,7 @@
       &::-webkit-slider-thumb {
         filter: drop-shadow(0 2px 4px $black-020);
       }
-    }
 
-    &:hover {
       &::-moz-range-thumb {
         filter: drop-shadow(0 2px 4px $black-020);
       }
@@ -120,9 +118,7 @@
         border: 1px solid $starbur;
         filter: drop-shadow(0 3px 5px $black-020);
       }
-    }
 
-    &:focus {
       &::-moz-range-thumb {
         border: 1px solid $starbur;
         filter: drop-shadow(0 3px 5px $black-020);
