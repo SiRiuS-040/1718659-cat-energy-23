@@ -25,6 +25,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+  background-color: $plaster;
   border: none;
   padding: 0;
 
@@ -35,6 +36,10 @@
     border-bottom: 1px solid $black-040;
   }
 
+  &:focus-visible {
+    border-bottom: 1px solid $black-040;
+  }
+
   &:focus-within {
     border-bottom: 1px solid transparent;
   }
@@ -42,6 +47,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $bleached-silk;
   }
 }
 
