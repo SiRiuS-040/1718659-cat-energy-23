@@ -1,5 +1,5 @@
 .switch-button {
-  margin: 0 16px;
+  margin: 0 15px 0 20px;
   border: 1px solid $compact-disc-grey;
   background: $white;
   border-radius: 30px;
@@ -19,7 +19,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 74px;
+  width: 80px;
   height: 6px;
   opacity: 0;
   z-index: 2;

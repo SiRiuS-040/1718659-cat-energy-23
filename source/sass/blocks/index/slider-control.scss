@@ -17,7 +17,7 @@
   }
 }
 
-.slider-control__label {
+.slider-control__button {
   font-family: $basic-font-title;
   font-style: normal;
   font-weight: normal;
@@ -25,6 +25,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+  border: none;
+  padding: 0;
 
   border-bottom: 1px dotted $black-040;
   cursor: pointer;
