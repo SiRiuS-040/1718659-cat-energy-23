@@ -38,6 +38,9 @@
 
   &:focus-visible {
     border-bottom: 1px solid $black-040;
+
+    outline: 2px solid $black;
+    outline-offset: 5px;
   }
 
   &:focus-within {
@@ -71,6 +74,8 @@
     margin: 0 22px;
     padding: 23px 0;
     background: $plaster;
+
+    outline: none;
 
     &::-webkit-slider-runnable-track {
       width: 100%;
@@ -133,6 +138,24 @@
       &::-moz-range-thumb {
         border: 1px solid $starbur;
         filter: drop-shadow(0 3px 5px $black-020);
+      }
+    }
+
+    &:focus-visible {
+      &::-webkit-slider-thumb {
+        border: 1px solid $starbur;
+        filter: drop-shadow(0 3px 5px $black-020);
+
+        outline: 2px solid $black;
+        outline-offset: 5px;
+      }
+
+      &::-moz-range-thumb {
+        border: 1px solid $starbur;
+        filter: drop-shadow(0 3px 5px $black-020);
+
+        outline: 2px solid $black;
+        outline-offset: 5px;
       }
     }
   }
