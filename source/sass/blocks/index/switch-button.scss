@@ -24,6 +24,11 @@
   opacity: 0;
   z-index: 2;
 
+  &:focus-visible + .switch-button__label::before {
+    outline: 2px solid $black;
+    outline-offset: 1px;
+  }
+
   &:checked + .switch-button__label::before {
     transform: translateX(37px);
     transition: transform 300ms linear;
